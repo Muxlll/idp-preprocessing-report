@@ -251,6 +251,14 @@
       \verb http://arxiv.org/abs/1311.2524
       \endverb
     \endentry
+    \entry{yolov5}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ultralytics/yolov5}}
+      \field{note}{Accessed: 2022-06-22}
+      \field{title}{YOLOv5 Github repository}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

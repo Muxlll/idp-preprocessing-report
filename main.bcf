@@ -2189,6 +2189,16 @@
     <bcf:citekey order="4">yolov4</bcf:citekey>
     <bcf:citekey order="5">RCNN</bcf:citekey>
     <bcf:citekey order="6">yolov1</bcf:citekey>
+    <bcf:citekey order="7">yolov1</bcf:citekey>
+    <bcf:citekey order="8">yolov1</bcf:citekey>
+    <bcf:citekey order="9">yolov1</bcf:citekey>
+    <bcf:citekey order="10">yolov1</bcf:citekey>
+    <bcf:citekey order="11">yolov1</bcf:citekey>
+    <bcf:citekey order="11">yolov2</bcf:citekey>
+    <bcf:citekey order="11">yolov3</bcf:citekey>
+    <bcf:citekey order="12">yolov4</bcf:citekey>
+    <bcf:citekey order="13">yolov5</bcf:citekey>
+    <bcf:citekey order="14">yolov2</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
