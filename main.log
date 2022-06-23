@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.14)  22 JUN 2022 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.14)  23 JUN 2022 13:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1446,39 +1446,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplx/m/it' tried instead on input line 37.
-[3 <./figures/YOLO_functionality.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-
- []
-
-) (./chapters/03.tex
-Underfull \hbox (badness 10000) in paragraph at lines 44--1
-
- []
-
-[4 <./figures/YOLO_network.png>]
+[3 <./figures/YOLO_functionality.png>] [4 <./figures/YOLO_network.png>])
+(./chapters/03.tex [5]
 chapter 3.
-) (./chapters/04.tex [5
+) (./chapters/04.tex [6
 
 
 ]
 chapter 4.
-) (./chapters/05.tex [6
+) (./chapters/05.tex [7
 
 
 ]
 chapter 5.
-) [7
+) [8
 
 
 ]
@@ -1500,7 +1481,7 @@ l. abs/1612.08242,
  []
 
 No complaints by nag.
-[8
+[9
 
 
 ]
@@ -1516,11 +1497,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42841 strings out of 483089
- 972706 string characters out of 5962868
+ 42880 strings out of 483089
+ 973342 string characters out of 5962868
  1897959 words of memory out of 5000000
- 56952 multiletter control sequences out of 15000+600000
- 574850 words of font info for 187 fonts, out of 8000000 for 9000
+ 56962 multiletter control sequences out of 15000+600000
+ 576165 words of font info for 205 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  81i,8n,139p,10099b,2205s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/maxi/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600p
@@ -1530,10 +1511,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
 fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino
 /uplri8a.pfb>
-Output written on main.pdf (12 pages, 1561787 bytes).
+Output written on main.pdf (13 pages, 1564772 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 179 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
+ 274 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  27273 words of extra memory for PDF output out of 29859 (max. 10000000)
 

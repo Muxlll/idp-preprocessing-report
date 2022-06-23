@@ -35,10 +35,22 @@ All in all, the first network has comparable accuracies as other object detectio
 
 The first architecture was improved incrementally in different versions. The original authors were involved until version 3 (\cite{yolov1, yolov2, yolov3}). After that, other authors published improvements as YOLOv4 \cite{yolov4}. There is no publication to YOLOv5 yet, although there is already an implementation \cite{yolov5}. \\
 
-With the first improvement which is published in \cite{yolov2}, the problem of the localization errors of the boundaries of objects are addressed. The focus is laid on recall and localization while still keeping high classification accuracy.  \\
+\paragraph{YOLOv2}
+With the first improvement which is published in \cite{yolov2}, the problem of the localization errors of the boundaries of objects are addressed. The authors call it a better, faster, and stronger version of the YOLO network because of the following improvements.
 
-YOLOv3 improvements  \\
+Depending on the authors, it is made better regarding the recall and localization of bounding boxes. The added batch normalization helps in regularization of the model. The dropout from the model can be left out without overfitting. It is also made better in terms of the image resolution. First, it is trained with the full resolution of $ 448 \times 448 $ for 10 epochs. Afterwards, the network is fine tuned on detection. Additionally, the last layers which were originally fully connected ones, are replaced by anchor boxes for the prediction of the bounding boxes. A disadvantage of doing this is that the box dimensions are hand picked. By running k-means clustering on the training set bounding boxes, it can be avoided and good priors can be found automatically. A second disadvantage of using anchor boxes is the instability of the model due to the coordinates of the centers of the boxes. These are calculated depending on the predicted box boundaries. Instead, it is better to predict the location coordinates relative to the cell's location resulting in values between 0 and 1. Another change is that the feature map is made finer so that the predictions get more accurate. One last change to make the network better is that multi-scale training. Due to the use of convolutional and pooling layers, the input resolution of images can easily be changed. This is used in the training to vary this resolution every few epochs. It makes it all in all more robust and not depending on the input resolution.
 
-YOLOv4 improvements  \\
- 
-YOLOv5 improvements  \\
+Additionally to making the network better, it is also made faster. The authors therefore introduce a new network called darknet-19 as the basis for YOLOv2. It has many advantages compared tp the previous one such as high accuracy and faster times. 
+
+To make the network stronger, hierarchical classification is used. Therefore, the principle of subclassing is used. If a concrete dog such as Norfolk terrier is detected, it is also detected as Terrier and dog. Additionally, dataset combination with WordTree is used where multiple datasets are combined. With all this, joint classification and detection is possible meaning that classification and object detection datasets can be used to efficiently train the network.
+
+All in all, this second version of YOLO already brings improvements to the network which is further made better in the next versions.
+
+
+\paragraph{YOLOv3}
+kjhg
+
+\paragraph{YOLOv4} 
+ljhg
+
+\paragraph{YOLOv5} 
