@@ -2199,6 +2199,19 @@
     <bcf:citekey order="12">yolov4</bcf:citekey>
     <bcf:citekey order="13">yolov5</bcf:citekey>
     <bcf:citekey order="14">yolov2</bcf:citekey>
+    <bcf:citekey order="15">yolov3</bcf:citekey>
+    <bcf:citekey order="16">yolov3</bcf:citekey>
+    <bcf:citekey order="17">yolov3</bcf:citekey>
+    <bcf:citekey order="18">yolov4</bcf:citekey>
+    <bcf:citekey order="19">yolov4</bcf:citekey>
+    <bcf:citekey order="20">yolov4</bcf:citekey>
+    <bcf:citekey order="21">Wang_2020_CVPR_Workshops</bcf:citekey>
+    <bcf:citekey order="22">7005506</bcf:citekey>
+    <bcf:citekey order="23">Liu_2018_CVPR</bcf:citekey>
+    <bcf:citekey order="24">yolov3</bcf:citekey>
+    <bcf:citekey order="25">yolov5</bcf:citekey>
+    <bcf:citekey order="26">deng2009imagenet</bcf:citekey>
+    <bcf:citekey order="27">labelimg</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

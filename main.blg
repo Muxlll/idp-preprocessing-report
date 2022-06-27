@@ -1,17 +1,20 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[63] biber:322> INFO - === Mi Jun 22, 2022, 13:47:52
-[74] Biber.pm:415> INFO - Reading 'main.bcf'
-[125] Biber.pm:943> INFO - Found 6 citekeys in bib section 0
-[136] Biber.pm:4256> INFO - Processing section 0
-[137] Utils.pm:75> INFO - Globbing data source 'bibliography.bib'
-[137] Utils.pm:91> INFO - Globbed data source 'bibliography.bib' to bibliography.bib
-[145] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[145] bibtex.pm:1653> INFO - LaTeX decoding ...
-[153] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliography.bib'
-[199] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[199] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[199] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[199] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[206] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[209] bbl.pm:755> INFO - Output to main.bbl
+[60] biber:322> INFO - === Mo Jun 27, 2022, 17:59:49
+[71] Biber.pm:415> INFO - Reading 'main.bcf'
+[123] Biber.pm:943> INFO - Found 11 citekeys in bib section 0
+[134] Biber.pm:4256> INFO - Processing section 0
+[134] Utils.pm:75> INFO - Globbing data source 'bibliography.bib'
+[134] Utils.pm:91> INFO - Globbed data source 'bibliography.bib' to bibliography.bib
+[141] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[142] bibtex.pm:1653> INFO - LaTeX decoding ...
+[154] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliography.bib'
+[198] Utils.pm:293> WARN - month field 'June' in entry 'Wang_2020_CVPR_Workshops' is not an integer - this will probably not sort properly.
+[210] Utils.pm:293> WARN - month field 'June' in entry 'Liu_2018_CVPR' is not an integer - this will probably not sort properly.
+[231] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[231] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[231] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[231] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[240] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[248] bbl.pm:755> INFO - Output to main.bbl
+[248] Biber.pm:128> INFO - WARNINGS: 2
