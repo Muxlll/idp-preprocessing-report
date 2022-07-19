@@ -1,5 +1,5 @@
 
-\chapter{Theoretical background}
+\chapter{Theoretical Background}
 
 There are different types of machine learning algorithms which have various application cases. In this case, an algorithm which performs object detection is used. In the following, the open source architecture YOLO (you only look once) is presented. First, the general principle of object detection is introduced, followed by the description of the architecture of deep YOLO networks. The principle of object detection is to combine Classification with detecting the boundaries of class instances which is exactly what needs to be done in the preprocessing step of sugar beet plants. By detecting the object boundaries of those plants, the image can be cropped to the right size which results in a standardized image format for the following regression task predicting the value of the damage (between 0 and 1).
 
@@ -7,7 +7,7 @@ The state of the art architecture for object detection is YOLO which was first i
 
 The advantage of YOLO-networks is that they are much faster than other object detection algorithms like for example R-CNNs \cite{RCNN} which let the model run on a very high number of regions in the image. The idea of YOLO is that the network runs once for the complete image, predicting the bounding boxes and corresponding classes at once. It finds regions in the image which are assigned predicted bounding boxes and probabilities. In the following, the general idea of YOLO is introduced, followed by the incremental improvements in the following versions. 
 
-\section{General architecture of YOLO}
+\section{General Architecture of YOLO}
 As proposed in the first introduction to YOLO in \cite{yolov1}, the network is designed to find objects and the corresponding boxes in a global manner meaning that the image is processed as whole once. Therefore, a $ S \times S $ grid divides the image into smaller parts. Each of those cells is responsible to predict $ B $ bounding boxes and corresponding confidences. This confidence is defined as $ Pr(Object) * IOU_{pred}^{truth} $. The bounding boxes consist of five predictions each, $ x, y, w, h $ and the confidence. The first four numbers represent the bounding box with the coordinates of the center $ (x,y) $ and the width and height (both relative to the whole image). Additionally, the cell predicts $ Pr(Class_i|Object) $, which are the conditional class probabilities. Only one set of class probabilities are predicted per cell. All in all, the the class probabilities and box confidence predictions are multiplied resulting in the class-specific confidence scores for each box: $ Pr(Class_i|Object) * Pr(Object) * IOU_{pred}^{truth} = Pr(Class_i) * IOU_{pred}^{truth} $.
  
 \begin{figure}[htb!]
@@ -31,11 +31,11 @@ To achieve this, a convolutional neural network is used in combination with full
 
 All in all, the first network has comparable accuracies as other object detection algorithms such as R-CNN or Fast R-CNN. The most important advantage of this architecture is the real time capability. Especially for this preprocessing task, the time plays an important role. 
 
-\section{Improvements in latest versions}
+\section{Incremental Improvements}
 
 The first architecture was improved incrementally in different versions. The original authors were involved until version 3 (\cite{yolov1, yolov2, yolov3}). After that, other authors published improvements as YOLOv4 \cite{yolov4}. There is no publication to YOLOv5 yet, although there is already an implementation \cite{yolov5}. \\
 
-\subsection{YOLOv2}
+\paragraph{YOLOv2}
 With the first improvement which is published in \cite{yolov2}, the problem of the localization errors of the boundaries of objects are addressed. The authors call it a better, faster, and stronger version of the YOLO network because of the following improvements.
 
 Depending on the authors, it is made better regarding the recall and localization of bounding boxes. The added batch normalization helps in regularization of the model. The dropout from the model can be left out without overfitting. It is also made better in terms of the image resolution. First, it is trained with the full resolution of $ 448 \times 448 $ for 10 epochs. Afterwards, the network is fine tuned on detection. Additionally, the last layers which were originally fully connected ones, are replaced by anchor boxes for the prediction of the bounding boxes. A disadvantage of doing this is that the box dimensions are hand picked. By running k-means clustering on the training set bounding boxes, it can be avoided and good priors can be found automatically. A second disadvantage of using anchor boxes is the instability of the model due to the coordinates of the centers of the boxes. These are calculated depending on the predicted box boundaries. Instead, it is better to predict the location coordinates relative to the cell's location resulting in values between 0 and 1. Another change is that the feature map is made finer so that the predictions get more accurate. One last change to make the network better is that multi-scale training. Due to the use of convolutional and pooling layers, the input resolution of images can easily be changed. This is used in the training to vary this resolution every few epochs. It makes it all in all more robust and not depending on the input resolution.
@@ -47,7 +47,7 @@ To make the network stronger, hierarchical classification is used. Therefore, th
 All in all, this second version of YOLO already brings improvements to the network which is further made better in the next versions.
 
 
-\subsection{YOLOv3}
+\paragraph{YOLOv3}
 The main difference to YOLOv2 is that in the new version presented in \cite{yolov3}, a new network architecture for feature extraction is used. It is called Darknet-53 and the structure can be seen in figure \ref{fig:yolov3_architecture}.
 
 \begin{figure}[htb!]
@@ -61,7 +61,8 @@ It is based on the architecture from YOLOv2 and Darknet-19 and has 53 convolutio
 
 The results show that the accuracy is comparable with ResNet-101 and ResNet-152, Top-5 is even best compared to the others. Additionally, the detectable frames per seconds are much higher than the other models.
 
-\subsection{YOLOv4} 
+\paragraph{YOLOv4}
+
 
 Currently, many object detectors are built up in a similar way. The rough structure can be seen in figure \ref{fig:yolov4_architecture}.
 
@@ -76,8 +77,11 @@ YOLOv4 \cite{yolov4} also consists of such parts. It is a One-Stage Detector and
 
 All in all, the presented architecture with the additional techniques is superior to other state of the art object detection algorithms in both speed and accuracy. 
 
-\subsection{YOLOv5} 
+\section{Current Architecture YOLOv5} 
 
 The current version YOLOv5 \cite{yolov5} again has further improvements compared to YOLOv4. The structure is similar to the previous one, also with the same backbone (CSPDarknet 53) and head (YOLOv3). One first difference is that instead of SPP, a faster version SPPF is used which is more than twice as fast. Together with PAN, this builds up the neck part.
 
+\paragraph{Different Network Sizes}
+
+\paragraph{Additional Features}
 As data augmentation, different techniques are used. For example mosaic concatenates several images to one big image. The copy paste technique copies objects from images to other pictures.  Additionally, random affine transformations are applied to the images, such as rotations, scaling, translation and shear. Similar to mosaic, MixUp combines different images but with the difference that the pictures are directly laid behind each other. Additional settings like hue, saturation and value are randomly adjusted. Together with random horizontal flips, the variety of the training set is increased which leads to better object detection accuracy.

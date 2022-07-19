@@ -5,19 +5,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Theoretical background}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Theoretical Background}{2}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}General architecture of YOLO}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.1}General Architecture of YOLO}{2}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Improvements in latest versions}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Incremental Improvements}{4}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}YOLOv2}{4}{subsection.2.2.1}%
+\contentsline {paragraph}{\nonumberline YOLOv2}{4}{section*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}YOLOv3}{5}{subsection.2.2.2}%
+\contentsline {paragraph}{\nonumberline YOLOv3}{5}{section*.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}YOLOv4}{5}{subsection.2.2.3}%
+\contentsline {paragraph}{\nonumberline YOLOv4}{5}{section*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}YOLOv5}{7}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Current Architecture YOLOv5}{6}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Different Network Sizes}{7}{section*.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Additional Features}{7}{section*.11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Methodology}{8}{chapter.3}%
 \defcounter {refsection}{0}\relax 
@@ -27,8 +31,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Evaluation}{10}{section.3.3}%
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Mobile Detection}{10}{section.3.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Results}{11}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Small and Medium Network}{11}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Large Network}{11}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Comparison}{11}{section.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusion and Outlook}{12}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{13}{chapter*.8}%
+\contentsline {chapter}{\nonumberline Bibliography}{13}{chapter*.13}%
