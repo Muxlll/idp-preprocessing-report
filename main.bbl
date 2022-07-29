@@ -478,6 +478,148 @@
       \field{note}{Git code (2015)}
       \field{title}{LabelImg}
     \endentry
+    \entry{COCO}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=08f925fe4692d130a1d7cb7d94483351}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Tsung-Yi},
+           giveni={T\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d980bc6930f008a0fb5fa667785f2309}{%
+           family={Maire},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f74ba6d25e498a6a4044b39ee30c903}{%
+           family={Belongie},
+           familyi={B\bibinitperiod},
+           given={Serge\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41d1867a5948033a654e06e5a0c87f22}{%
+           family={Bourdev},
+           familyi={B\bibinitperiod},
+           given={Lubomir\bibnamedelima D.},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2c60ceb4a241891e128295a5ae80aef}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=797fc3624ba315db58eef7279ace5bf3}{%
+           family={Hays},
+           familyi={H\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e52876f830a8a20786ff3e4d7dd6f083}{%
+           family={Perona},
+           familyi={P\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aedcd3831845183e070aef16857d83ea}{%
+           family={Ramanan},
+           familyi={R\bibinitperiod},
+           given={Deva},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecd149fdcb3e0503881d49e545744c3d}{%
+           family={Doll{á}r},
+           familyi={D\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0eae2d56a9cbb037c64028d6573877a7}{%
+           family={Zitnick},
+           familyi={Z\bibinitperiod},
+           given={C.\bibnamedelimi Lawrence},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{09e81a5dade3507a3206604d2fcd5871}
+      \strng{fullhash}{99c0d934968c1f6af7da091395340c35}
+      \strng{bibnamehash}{99c0d934968c1f6af7da091395340c35}
+      \strng{authorbibnamehash}{99c0d934968c1f6af7da091395340c35}
+      \strng{authornamehash}{09e81a5dade3507a3206604d2fcd5871}
+      \strng{authorfullhash}{99c0d934968c1f6af7da091395340c35}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Microsoft {COCO:} Common Objects in Context}
+      \field{volume}{abs/1405.0312}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1405.0312
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1405.0312
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1405.0312
+      \endverb
+    \endentry
+    \entry{pytorch_mobile}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://pytorch.org/mobile/home/}}
+      \field{note}{Accessed: 2022-07-28}
+      \field{title}{PyTorch Mobile}
+    \endentry
+    \entry{survey_machine_learning_mobile}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=92c1f62b413d7a879f6738cd0050af33}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Xiangfeng},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ebbe66355d830c571538c9fcc57cfb8e}{%
+           family={Spasić},
+           familyi={S\bibinitperiod},
+           given={Irena},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e77c535bdaba7977550b6bdf8a697394}{%
+           family={Chapman},
+           familyi={C\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2d9825dc1fb5478c9a7ae0f793c474d}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Bradley},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6800eb85aa7def2d35d449e343ce71ea}
+      \strng{fullhash}{6800eb85aa7def2d35d449e343ce71ea}
+      \strng{bibnamehash}{6800eb85aa7def2d35d449e343ce71ea}
+      \strng{authorbibnamehash}{6800eb85aa7def2d35d449e343ce71ea}
+      \strng{authornamehash}{6800eb85aa7def2d35d449e343ce71ea}
+      \strng{authorfullhash}{6800eb85aa7def2d35d449e343ce71ea}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 SoutheastCon}
+      \field{title}{The State of the Art in Implementing Machine Learning for Mobile Apps: A Survey}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/SoutheastCon44009.2020.9249652
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

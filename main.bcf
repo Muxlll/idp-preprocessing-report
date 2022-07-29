@@ -2212,6 +2212,13 @@
     <bcf:citekey order="25">yolov5</bcf:citekey>
     <bcf:citekey order="26">deng2009imagenet</bcf:citekey>
     <bcf:citekey order="27">labelimg</bcf:citekey>
+    <bcf:citekey order="28">COCO</bcf:citekey>
+    <bcf:citekey order="29">yolov5</bcf:citekey>
+    <bcf:citekey order="30">yolov5</bcf:citekey>
+    <bcf:citekey order="31">yolov5</bcf:citekey>
+    <bcf:citekey order="32">yolov5</bcf:citekey>
+    <bcf:citekey order="33">pytorch_mobile</bcf:citekey>
+    <bcf:citekey order="34">survey_machine_learning_mobile</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
