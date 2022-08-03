@@ -15,32 +15,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline YOLOv3}{5}{section*.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline YOLOv4}{5}{section*.8}%
+\contentsline {paragraph}{\nonumberline YOLOv4}{6}{section*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Current Architecture YOLOv5}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Current Architecture YOLOv5}{7}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\nonumberline Different Network Sizes}{7}{section*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Additional Features}{7}{section*.11}%
+\contentsline {paragraph}{\nonumberline Additional Features}{8}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methodology}{8}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Methodology}{9}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Dataset}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Dataset}{9}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Training}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Training}{11}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Inference and Evaluation}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Inference and Evaluation}{12}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Mobile Detection}{12}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Mobile Detection}{13}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Results}{14}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Results}{15}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Large Network}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Large Network}{15}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Small and Medium Network}{17}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Small and Medium Network}{21}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Comparison}{17}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Comparison and Discussion}{23}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion and Outlook}{18}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Conclusion and Outlook}{25}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{19}{chapter*.20}%
+\contentsline {chapter}{\nonumberline Bibliography}{26}{chapter*.29}%

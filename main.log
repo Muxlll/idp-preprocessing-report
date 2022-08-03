@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.14)  29 JUL 2022 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.14)  3 AUG 2022 08:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1325,31 +1325,15 @@ line 22.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
 line 22.
 
-(./pages/cover.tex
+(./pages/title.tex
 <logos/tum.pdf, id=7, 742.775pt x 391.4625pt>
-File: logos/tum.pdf Graphic file (type pdf)
-<use logos/tum.pdf>
-Package pdftex.def Info: logos/tum.pdf  used on input line 16.
-(pdftex.def)             Requested size: 107.96596pt x 56.9055pt.
-<logos/faculty.pdf, id=8, 34.14326pt x 36.98859pt>
-File: logos/faculty.pdf Graphic file (type pdf)
-<use logos/faculty.pdf>
-Package pdftex.def Info: logos/faculty.pdf  used on input line 36.
-(pdftex.def)             Requested size: 52.52812pt x 56.9055pt.
- [1
-
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logos/tum.pdf> <./logos/
-faculty.pdf>]) (./pages/title.tex
 File: logos/tum.pdf Graphic file (type pdf)
 <use logos/tum.pdf>
 Package pdftex.def Info: logos/tum.pdf  used on input line 8.
 (pdftex.def)             Requested size: 107.96596pt x 56.9055pt.
 LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 
 26.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplx.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
@@ -1380,6 +1364,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+<logos/faculty.pdf, id=8, 34.14326pt x 36.98859pt>
 File: logos/faculty.pdf Graphic file (type pdf)
 <use logos/faculty.pdf>
 Package pdftex.def Info: logos/faculty.pdf  used on input line 36.
@@ -1388,7 +1373,9 @@ Package pdftex.def Info: logos/faculty.pdf  used on input line 36.
 
 
 
-])
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logos/tum.pdf> <./logos/
+faculty.pdf>])
 (./pages/abstract.tex
 chapter without number
 ) [2
@@ -1418,50 +1405,54 @@ chapter 2.
 
 
 ]
-<figures/YOLO_functionality.png, id=123, 1271.75125pt x 794.97pt>
+<figures/YOLO_functionality.png, id=120, 1271.75125pt x 794.97pt>
 File: figures/YOLO_functionality.png Graphic file (type png)
 <use figures/YOLO_functionality.png>
 Package pdftex.def Info: figures/YOLO_functionality.png  used on input line 15.
 
-(pdftex.def)             Requested size: 317.93703pt x 198.742pt.
+(pdftex.def)             Requested size: 381.52832pt x 238.49284pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-<figures/YOLO_network.png, id=128, 1437.37pt x 598.235pt>
+<figures/YOLO_network.png, id=124, 1437.37pt x 598.235pt>
 File: figures/YOLO_network.png Graphic file (type png)
 <use figures/YOLO_network.png>
-Package pdftex.def Info: figures/YOLO_network.png  used on input line 27.
-(pdftex.def)             Requested size: 402.46086pt x 167.50465pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Package pdftex.def Info: figures/YOLO_network.png  used on input line 25.
+(pdftex.def)             Requested size: 359.34161pt x 149.55838pt.
+LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 31.
+[3 <./figures/YOLO_functionality.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 37.
-[3 <./figures/YOLO_functionality.png>] [4 <./figures/YOLO_network.png>]
-<figures/yolov3_architecture.png, id=151, 654.445pt x 906.38625pt>
+[4 <./figures/YOLO_network.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+<figures/yolov3_architecture.png, id=149, 654.445pt x 906.38625pt>
 File: figures/yolov3_architecture.png Graphic file (type png)
 <use figures/yolov3_architecture.png>
-Package pdftex.def Info: figures/yolov3_architecture.png  used on input line 55
+Package pdftex.def Info: figures/yolov3_architecture.png  used on input line 53
 .
 (pdftex.def)             Requested size: 183.24335pt x 253.78642pt.
-<figures/yolov4_architecture.png, id=155, 1323.94624pt x 375.4025pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+[5]
+<figures/yolov4_architecture.png, id=159, 1323.94624pt x 375.4025pt>
 File: figures/yolov4_architecture.png Graphic file (type png)
 <use figures/yolov4_architecture.png>
-Package pdftex.def Info: figures/yolov4_architecture.png  used on input line 71
+Package pdftex.def Info: figures/yolov4_architecture.png  used on input line 70
 .
 (pdftex.def)             Requested size: 410.4191pt x 116.37357pt.
-
-[5] [6 <./figures/yolov3_architecture.png> <./figures/yolov4_architecture.png>]
-) (./chapters/03.tex [7]
+ [6 <./figures/yolov3_architecture.png>]) (./chapters/03.tex [7 <./figures/yolo
+v4_architecture.png>] [8]
 chapter 3.
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 4.
@@ -1475,12 +1466,12 @@ File: ts1pplx.fd 2004/09/06 font definitions for TS1/pplx.
 LaTeX Warning: Command \textdegree invalid in math mode on input line 4.
 
 Missing character: There is no ° in font pplr9t!
-<figures/image_type1.JPG, id=188, 1381.16pt x 776.9025pt>
+<figures/image_type1.JPG, id=194, 1381.16pt x 776.9025pt>
 File: figures/image_type1.JPG Graphic file (type jpg)
 <use figures/image_type1.JPG>
 Package pdftex.def Info: figures/image_type1.JPG  used on input line 16.
 (pdftex.def)             Requested size: 207.16505pt x 116.53033pt.
-<figures/image_type2.jpg, id=189, 752.8125pt x 1003.75pt>
+<figures/image_type2.jpg, id=195, 752.8125pt x 1003.75pt>
 File: figures/image_type2.jpg Graphic file (type jpg)
 <use figures/image_type2.jpg>
 Package pdftex.def Info: figures/image_type2.jpg  used on input line 18.
@@ -1490,7 +1481,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[8
+[9
 
 
  <./figures/image_type1.JPG> <./figures/image_type2.jpg>]
@@ -1504,28 +1495,28 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<figures/labeling.png, id=198, 1008.76875pt x 764.8575pt>
+<figures/labeling.png, id=204, 1008.76875pt x 764.8575pt>
 File: figures/labeling.png Graphic file (type png)
 <use figures/labeling.png>
 Package pdftex.def Info: figures/labeling.png  used on input line 29.
 (pdftex.def)             Requested size: 201.75017pt x 152.96878pt.
- [9 <./figures/labeling.png>]
+ [10 <./figures/labeling.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-[10]
-<figures/mosaic.png, id=217, 1881.0275pt x 796.9775pt>
+[11]
+<figures/mosaic.png, id=223, 1881.0275pt x 796.9775pt>
 File: figures/mosaic.png Graphic file (type png)
 <use figures/mosaic.png>
 Package pdftex.def Info: figures/mosaic.png  used on input line 63.
 (pdftex.def)             Requested size: 376.19884pt x 159.39267pt.
-<figures/mixup.png, id=218, 1604.99625pt x 1036.87375pt>
+<figures/mixup.png, id=224, 1604.99625pt x 1036.87375pt>
 File: figures/mixup.png Graphic file (type png)
 <use figures/mixup.png>
 Package pdftex.def Info: figures/mixup.png  used on input line 65.
 (pdftex.def)             Requested size: 320.99356pt x 207.37108pt.
-<figures/copy-paste.png, id=219, 1280.785pt x 546.04pt>
+<figures/copy-paste.png, id=225, 1280.785pt x 546.04pt>
 File: figures/copy-paste.png Graphic file (type png)
 <use figures/copy-paste.png>
 Package pdftex.def Info: figures/copy-paste.png  used on input line 67.
@@ -1547,7 +1538,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-[11]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
@@ -1562,11 +1553,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-) (./chapters/04.tex [12] [13 <./figures/mosaic.png> <./figures/mixup.png> <./f
+) (./chapters/04.tex [13] [14 <./figures/mosaic.png> <./figures/mixup.png> <./f
 igures/copy-paste.png>]
 chapter 4.
 
-Overfull \hbox (9.48218pt too wide) in paragraph at lines 12--19
+Overfull \hbox (4.80418pt too wide) in paragraph at lines 12--19
  [][] 
  []
 
@@ -1575,16 +1566,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[14
+[15
 
 
 ]
-<figures/results_exp1_1.png, id=248, 1133.23375pt x 746.79pt>
+<figures/results_exp1_1.png, id=254, 1133.23375pt x 746.79pt>
 File: figures/results_exp1_1.png Graphic file (type png)
 <use figures/results_exp1_1.png>
 Package pdftex.def Info: figures/results_exp1_1.png  used on input line 29.
 (pdftex.def)             Requested size: 201.70805pt x 132.92363pt.
-<figures/results_exp1_2.JPEG, id=249, 602.25pt x 401.5pt>
+<figures/results_exp1_2.JPEG, id=255, 602.25pt x 401.5pt>
 File: figures/results_exp1_2.JPEG Graphic file (type jpg)
 <use figures/results_exp1_2.JPEG>
 Package pdftex.def Info: figures/results_exp1_2.JPEG  used on input line 30.
@@ -1602,12 +1593,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-<figures/false_positive_1.png, id=251, 515.9275pt x 338.26375pt>
+<figures/false_positive_1.png, id=257, 515.9275pt x 338.26375pt>
 File: figures/false_positive_1.png Graphic file (type png)
 <use figures/false_positive_1.png>
 Package pdftex.def Info: figures/false_positive_1.png  used on input line 41.
 (pdftex.def)             Requested size: 236.29037pt x 154.92189pt.
-<figures/false_positive_2.png, id=252, 515.9275pt x 516.93124pt>
+<figures/false_positive_2.png, id=258, 515.9275pt x 516.93124pt>
 File: figures/false_positive_2.png Graphic file (type png)
 <use figures/false_positive_2.png>
 Package pdftex.def Info: figures/false_positive_2.png  used on input line 42.
@@ -1617,9 +1608,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-[15 <./figures/results_exp1_1.png> <./figures/results_exp1_2.JPEG> <./figures/f
+[16 <./figures/results_exp1_1.png> <./figures/results_exp1_2.JPEG> <./figures/f
 alse_positive_1.png> <./figures/false_positive_2.png>]
-<figures/exp1_curve.png, id=261, 2006.49625pt x 1337.99875pt>
+<figures/exp1_curve.png, id=267, 2006.49625pt x 1337.99875pt>
 File: figures/exp1_curve.png Graphic file (type png)
 <use figures/exp1_curve.png>
 Package pdftex.def Info: figures/exp1_curve.png  used on input line 53.
@@ -1629,9 +1620,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-[16 <./figures/exp1_curve.png>]) (./chapters/05.tex [17]
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+[17 <./figures/exp1_curve.png>]
+Overfull \hbox (4.80418pt too wide) in paragraph at lines 69--76
+ [][] 
+ []
+
+<figures/no_pre_low_dat.png, id=277, 2006.49625pt x 1337.99875pt>
+File: figures/no_pre_low_dat.png Graphic file (type png)
+<use figures/no_pre_low_dat.png>
+Package pdftex.def Info: figures/no_pre_low_dat.png  used on input line 84.
+(pdftex.def)             Requested size: 300.96146pt x 200.69115pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+<figures/no_pre_high_dat.png, id=279, 2006.49625pt x 1337.99875pt>
+File: figures/no_pre_high_dat.png Graphic file (type png)
+<use figures/no_pre_high_dat.png>
+Package pdftex.def Info: figures/no_pre_high_dat.png  used on input line 95.
+(pdftex.def)             Requested size: 300.96146pt x 200.69115pt.
+[18 <./figures/no_pre_low_dat.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+<figures/yes_pre_low_dat.png, id=288, 2006.49625pt x 1337.99875pt>
+File: figures/yes_pre_low_dat.png Graphic file (type png)
+<use figures/yes_pre_low_dat.png>
+Package pdftex.def Info: figures/yes_pre_low_dat.png  used on input line 106.
+(pdftex.def)             Requested size: 300.96146pt x 200.69115pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+<figures/yes_pre_high_dat.png, id=290, 2006.49625pt x 1337.99875pt>
+File: figures/yes_pre_high_dat.png Graphic file (type png)
+<use figures/yes_pre_high_dat.png>
+Package pdftex.def Info: figures/yes_pre_high_dat.png  used on input line 117.
+(pdftex.def)             Requested size: 300.96146pt x 200.69115pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+<figures/pred1.png, id=292, 2006.49625pt x 1098.1025pt>
+File: figures/pred1.png Graphic file (type png)
+<use figures/pred1.png>
+Package pdftex.def Info: figures/pred1.png  used on input line 128.
+(pdftex.def)             Requested size: 401.29214pt x 219.61661pt.
+<figures/pred2.png, id=293, 2006.49625pt x 1098.1025pt>
+File: figures/pred2.png Graphic file (type png)
+<use figures/pred2.png>
+Package pdftex.def Info: figures/pred2.png  used on input line 129.
+(pdftex.def)             Requested size: 401.29214pt x 219.61661pt.
+[19 <./figures/no_pre_high_dat.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+[20 <./figures/yes_pre_low_dat.png> <./figures/yes_pre_high_dat.png>] [21 <./fi
+gures/pred1.png> <./figures/pred2.png>]
+<figures/comp_small.png, id=316, 2006.49625pt x 1337.99875pt>
+File: figures/comp_small.png Graphic file (type png)
+<use figures/comp_small.png>
+Package pdftex.def Info: figures/comp_small.png  used on input line 144.
+(pdftex.def)             Requested size: 200.66138pt x 133.80771pt.
+<figures/comp_medium.png, id=317, 2006.49625pt x 1337.99875pt>
+File: figures/comp_medium.png Graphic file (type png)
+<use figures/comp_medium.png>
+Package pdftex.def Info: figures/comp_medium.png  used on input line 145.
+(pdftex.def)             Requested size: 200.66138pt x 133.80771pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+<figures/result_small.png, id=319, 2006.49625pt x 1337.99875pt>
+File: figures/result_small.png Graphic file (type png)
+<use figures/result_small.png>
+Package pdftex.def Info: figures/result_small.png  used on input line 156.
+(pdftex.def)             Requested size: 401.29214pt x 267.59502pt.
+[22 <./figures/comp_small.png> <./figures/comp_medium.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+[23 <./figures/result_small.png>]) (./chapters/05.tex [24]
 chapter 5.
-) [18
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+) [25
 
 
 ]
@@ -1646,12 +1734,12 @@ l. abs/1612.08242,
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[19
+[26
 
 
 ]
 No complaints by nag.
-[20]
+[27]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./main.aux)
@@ -1664,13 +1752,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43133 strings out of 483089
- 977672 string characters out of 5962868
- 1902186 words of memory out of 5000000
- 57073 multiletter control sequences out of 15000+600000
- 585256 words of font info for 271 fonts, out of 8000000 for 9000
+ 43219 strings out of 483089
+ 979528 string characters out of 5962868
+ 1903323 words of memory out of 5000000
+ 57118 multiletter control sequences out of 15000+600000
+ 583626 words of font info for 283 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 81i,9n,139p,10099b,2205s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,11n,139p,10099b,2205s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/maxi/.texl
 ive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
@@ -1679,10 +1767,10 @@ fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on main.pdf (24 pages, 13965755 bytes).
+Output written on main.pdf (30 pages, 25297639 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 33522 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 510 PDF objects out of 1000 (max. 8388607)
+ 360 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 33055 words of extra memory for PDF output out of 35830 (max. 10000000)
 

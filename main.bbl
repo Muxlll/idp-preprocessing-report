@@ -262,6 +262,16 @@
       \verb https://doi.org/10.5281/zenodo.3908559
       \endverb
     \endentry
+    \entry{pytorch_hub_yolov5}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2022-08-02}
+      \field{title}{YOLOv5 in PyTorch Hub}
+      \verb{doi}
+      \verb 10.5281/zenodo.6222936
+      \endverb
+    \endentry
     \entry{Wang_2020_CVPR_Workshops}{inproceedings}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=053d491932411950eccf2bb9a1025d11}{%
@@ -412,6 +422,14 @@
       \field{title}{Path Aggregation Network for Instance Segmentation}
       \field{year}{2018}
     \endentry
+    \entry{release_current}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ultralytics/yolov5/releases}}
+      \field{note}{Accessed: 2022-08-02}
+      \field{title}{YOLOv5 release version 6.1}
+    \endentry
     \entry{deng2009imagenet}{inproceedings}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=0ae7fdc13773f928525f673b05f37149}{%
@@ -547,8 +565,8 @@
       \strng{authorbibnamehash}{99c0d934968c1f6af7da091395340c35}
       \strng{authornamehash}{09e81a5dade3507a3206604d2fcd5871}
       \strng{authorfullhash}{99c0d934968c1f6af7da091395340c35}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}

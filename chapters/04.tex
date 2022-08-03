@@ -9,11 +9,11 @@ The first experiments were made with only a small part of the data set being man
 
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{|c c c c c c c c c c c|} 
+	\begin{tabular}{|c c c c c c c c c c c c c|} 
 		\hline
-		Hue & Sat & Value & Degrees & Translate & Scale & Shear & Persp & UD & LR & Mosaic \\ % [0.5ex] 
+		Hue & Sat & Val & Deg & Trans & Scale & Shear & Persp & UD & LR & Mos & Mix & CP\\ % [0.5ex]  
 		\hline
-		0.015 & 0.7 & 0.4 & 0.0 & 0.1 & 0.5 & 0.0 & 0.0 & 0.0 & 0.5 & 1.0 \\
+		0.015 & 0.7 & 0.4 & 0.0 & 0.1 & 0.5 & 0.0 & 0.0 & 0.0 & 0.5 & 1.0 & 0.0 & 0.0 \\
 		\hline
 	\end{tabular}
 	\caption{Values for data augmentation}
@@ -60,21 +60,111 @@ A perfect model would have an area under curve of $ 1.0 $. This one has $ 0.741 
 
 All in all, we encounter two main problems. The first one is that the bounding boxes of detected plants are just very inaccurate. Most of the time, the whole image is labeled as one sugar beet. The second problem is that the model is not robust. It also detects other plants as sugar beets and it can not distinguish between different kinds of plants.
 
-The first problem can be solved by labeling the data more accurate. By this, the model learns the exact boundaries of sugar beet plants and the predicted results get better. For the second problem, two different solutions exist. One is to add another class called other plant which is essentially everything else than sugar beets. The problem of this is that for example cars or persons are also detected as other plant which is also not intended. The second possible solution of this problem is to add so called background images. These are pictures which are not labeled with any object. Possible images therefore are other plants, persons or cars. 
+The first problem can be solved by labeling the data more accurate. By this, the model learns the exact boundaries of sugar beet plants and the predicted results get better. For the second problem, two different solutions exist. One is to add another class called other plant which is essentially everything else than sugar beets. The problem of this is that for example cars or persons are also detected as other plant which is also not intended. The second possible solution of this problem is to add so called background images. These are pictures which are not labeled with any object. Possible images therefore are other plants, persons or cars. At first, we added the so called other\_plant class to get a better distinction between sugar beets and any different type of plant. \\
 
-%\begin{itemize}
-%\item large model with only automatically labeled images
-%\item large model with manually labeled images (pretrained vs not pretrained)
-%\item improved model with low data augmentation
-%\item best model with high data augmentation (plus pretrained)
-%\end{itemize}
+Although the predicted results are not too good by now, the model has already seen the structures of sugar beets. This can be used as pretrained model. In the following, four different training strategies are presented. The goal is to compare training the model from scratch and using the pretrained version. Additionally, the impact of including background images is investigated. The values of different hyperparameters for higher data augmentation can be seen in table \ref{tab:high_augmentation}.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c c c c c c c c c c c c c|} 
+		\hline
+		Hue & Sat & Val & Deg & Trans & Scale & Shear & Persp & UD & LR & Mos & Mix & CP\\ % [0.5ex] 
+		\hline
+		0.015 & 0.7 & 0.4 & 0.0 & 0.1 & 0.9 & 0.0 & 0.0 & 0.0 & 0.5 & 1.0 & 0.1 & 0.1\\
+		\hline
+	\end{tabular}
+	\caption{Values for higher data augmentation}
+	\label{tab:high_augmentation}
+\end{table}
+
+The first experiment is done from scratch without pretraining and lower data augmentation. The dataset used is labeled completely by hand. The results of the tests can be seen in figure \ref{fig:no_pre_low_dat}.
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[scale=0.15]{figures/no_pre_low_dat.png}
+	\caption{P R no pre low dat}
+	\label{fig:no_pre_low_dat}
+\end{figure}
+
+With an AUC (area under curve) of $ 0.818 $, it has already better results compared to the first experiment. The reason is the more exact labeling. \\
+
+In the next training, again no pretrained model was used. Instead, the parameters were adjusted to use higher data augmentation. The results of the testing can be seen in figure \ref{fig:no_pre_high_dat}.
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[scale=0.15]{figures/no_pre_high_dat.png}
+	\caption{P R no pre low dat}
+	\label{fig:no_pre_high_dat}
+\end{figure}
+
+You can see that an improvement can be achieved with an AUC of $ 0.839 $ (compare $ 0.818 $ from before). We can conclude from this that data augmentation has quiet a high impact on the accuracy. \\
+
+In the next experiment, the pretrained model from before is used. The data augmentation is again the higher one and here, the images of other plants from Imagenet are labeled with other\_plant. Testing results can be seen in figure \ref{fig:yes_pre_low_dat}.
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[scale=0.15]{figures/yes_pre_low_dat.png}
+	\caption{P R no pre low dat}
+	\label{fig:yes_pre_low_dat}
+\end{figure}
+
+With an AUC of $ 0.865 $, the prediction accuracy again has improved. \\
+
+In the next experiment, the difference to the previous one is that the images from Imagenet are not labeled at all. As already mentioned, the problem of the inexact labeling of the Imagenet pictures can sometimes lead to unintended predictions. The testing results of this experiment can be seen in figure \ref{fig:yes_pre_high_dat}.
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[scale=0.15]{figures/yes_pre_high_dat.png}
+	\caption{P R no pre low dat}
+	\label{fig:yes_pre_high_dat}
+\end{figure}
+
+This model has the best AUC with $ 0.872 $.\\
+
+Now with these improvements, the new predictions are more accurate and also, the problem of the second class other\_plant is no longer existant. Examples for current predictions can be seen in figure \ref{fig:current_predictions}.
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[scale=0.2]{figures/pred1.png}
+	\includegraphics[scale=0.2]{figures/pred2.png}
+	\caption{Predictions}
+	\label{fig:current_predictions}
+\end{figure}
+
+These predictions were made in one of the drone videos. You can see that now, the bounding boxes are just around one plant each. This is the behavior that was expected of the object detection algorithm. Previously, the whole image or one row of plants were labeled as sugar beets. Other problems like detecting the image as other\_plant if no sugar beet was detected is also improved. 
 
 \section{Small and Medium Network}
 
-\begin{itemize}
-	\item small and medium model (from scratch)
-	\item pretrained small model low data augmentation 
-	\item improved small model high augmentation
-\end{itemize}
+As already mentioned, the inference time of the large model don't really make it possible to apply it in the application in-place. This is the reason why also the small and medium sized model is trained. Already some behavior could be seen in experiments with the large model such as the improvements of including exactly labeled images, background data with no labels and using higher data augmentation. The results of the small and medium sized models are presented in the following. \\
 
-\section{Comparison}
+First experiments are made with the models which are pretrained using the COCO dataset. Data augmentation was low and also all other hyperparameters were chosen to be the default ones as this was just a first experiment to compare the accuracy of the two types of models. Figure \ref{fig:comparison_small_medium} depicts the testing results. 
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[scale=0.1]{figures/comp_small.png}
+	\includegraphics[scale=0.1]{figures/comp_medium.png}
+	\caption{Comparison}
+	\label{fig:comparison_small_medium}
+\end{figure}
+
+Both R-P-curves look quite similar. However, the left one (small model) has a bit smaller precision in regions of small recall. In contrast, with higher recall, the small model has higher precision. All in all, both models have similar AUC with $ 0.806 $ (small) and $ 0.805 $ (medium). This small difference and the fact that the small model has much faster inference times lead to the decision to not further train the medium model and focus on the small one. \\
+
+With the knowledge of the large model to include background images and use higher data augmentation, the setting of the small model can also be adjusted accordingly. With these hyperparameters and a pretrained model on the sugar beet images labeled as whole picture as one plant, the following results of figure \ref{fig:result_small_one} can be observed. 
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[scale=0.2]{figures/result_small.png}
+	\caption{Result small model}
+	\label{fig:result_small_one}
+\end{figure}
+
+It can be seen that the accuracy has further improved compared to the first experiments. Now, with small recall (nearly up to 0.3), a precision of about $ 100\% $ can be achieved. Additionally, the precision stays very high with increasing recall. The curve now drops much faster, but later. The overall AUC is increased by approximately $ 6\% $ and lays at $ 0.858 $.
+
+\section{Comparison and Discussion}
+In this section, a comparison is made and a general discussion about the models introduced and the object detection in general is presented.
+
+Now the first aspect is the type of model. YOLO is in general very efficient due to the architecture and the idea of processing the image once (\"you only look once\"). However, in the real time application of detecting the plants in the field, big differences between the large and small architectures can be observed. While the large model takes nearly half a second per image, the small one can predict the labels of a videostream nearly 10 times per second. This makes it very hard to apply the model in-place in the mobile application as it would not be very user-friendly.
+
+One next aspect is the accuracy of predicted labels. While the large model has an AUC of $ 87.2\% $, the small model has an AUC of $ 85.8\% $. As expected, the larger models predicts the bounding boxes of sugar beets in fields more accurately. But the difference to the small model is very low. We also have to keep in mind that about $ 10000 $ images of sugar beets were labeled manually. Of course, this was done as exactly as possible, but in many cases, the borders of sugar beets were not clearly visible at first or even second glance leading to small errors in the labeling. Especially in images of larger sugar beet plants, the bounding box labeling by hand is very hard because of the overlapping leafs. Especially with this background, the small difference of accuracy between large and small model is not too important.\\
+
+All in all, this leads to the decision of implementing the small model directly in the application. It has two disadvantages. The first is that the user can directly see if a plant is detected and immediately adjust the camera position and angle. Another possibility is the implementation of adjusting the bounding box so that a different part of the image is cropped if the user thinks that the prediction is not correct enough. This leads to more flexibility of the application. 

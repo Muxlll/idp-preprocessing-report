@@ -1,20 +1,20 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[72] biber:322> INFO - === Do Jul 28, 2022, 11:47:46
-[83] Biber.pm:415> INFO - Reading 'main.bcf'
-[134] Biber.pm:943> INFO - Found 14 citekeys in bib section 0
-[143] Biber.pm:4256> INFO - Processing section 0
-[144] Utils.pm:75> INFO - Globbing data source 'bibliography.bib'
-[144] Utils.pm:91> INFO - Globbed data source 'bibliography.bib' to bibliography.bib
-[153] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[153] bibtex.pm:1653> INFO - LaTeX decoding ...
-[169] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliography.bib'
-[213] Utils.pm:293> WARN - month field 'June' in entry 'Wang_2020_CVPR_Workshops' is not an integer - this will probably not sort properly.
-[225] Utils.pm:293> WARN - month field 'June' in entry 'Liu_2018_CVPR' is not an integer - this will probably not sort properly.
-[266] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[266] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[266] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[266] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[277] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[286] bbl.pm:755> INFO - Output to main.bbl
-[286] Biber.pm:128> INFO - WARNINGS: 2
+[62] biber:322> INFO - === Mi Aug  3, 2022, 08:50:05
+[72] Biber.pm:415> INFO - Reading 'main.bcf'
+[124] Biber.pm:943> INFO - Found 16 citekeys in bib section 0
+[134] Biber.pm:4256> INFO - Processing section 0
+[134] Utils.pm:75> INFO - Globbing data source 'bibliography.bib'
+[134] Utils.pm:91> INFO - Globbed data source 'bibliography.bib' to bibliography.bib
+[142] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[143] bibtex.pm:1653> INFO - LaTeX decoding ...
+[159] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliography.bib'
+[204] Utils.pm:293> WARN - month field 'June' in entry 'Wang_2020_CVPR_Workshops' is not an integer - this will probably not sort properly.
+[216] Utils.pm:293> WARN - month field 'June' in entry 'Liu_2018_CVPR' is not an integer - this will probably not sort properly.
+[257] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[258] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[258] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[258] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[268] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[278] bbl.pm:755> INFO - Output to main.bbl
+[278] Biber.pm:128> INFO - WARNINGS: 2
