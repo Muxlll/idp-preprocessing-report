@@ -2211,16 +2211,18 @@
     <bcf:citekey order="24">Liu_2018_CVPR</bcf:citekey>
     <bcf:citekey order="25">yolov3</bcf:citekey>
     <bcf:citekey order="26">yolov5</bcf:citekey>
-    <bcf:citekey order="27">release_current</bcf:citekey>
-    <bcf:citekey order="28">deng2009imagenet</bcf:citekey>
-    <bcf:citekey order="29">labelimg</bcf:citekey>
-    <bcf:citekey order="30">COCO</bcf:citekey>
-    <bcf:citekey order="31">yolov5</bcf:citekey>
-    <bcf:citekey order="32">yolov5</bcf:citekey>
+    <bcf:citekey order="27">yolov5</bcf:citekey>
+    <bcf:citekey order="28">yolov5</bcf:citekey>
+    <bcf:citekey order="29">release_current</bcf:citekey>
+    <bcf:citekey order="30">deng2009imagenet</bcf:citekey>
+    <bcf:citekey order="31">labelimg</bcf:citekey>
+    <bcf:citekey order="32">COCO</bcf:citekey>
     <bcf:citekey order="33">yolov5</bcf:citekey>
     <bcf:citekey order="34">yolov5</bcf:citekey>
-    <bcf:citekey order="35">pytorch_mobile</bcf:citekey>
-    <bcf:citekey order="36">survey_machine_learning_mobile</bcf:citekey>
+    <bcf:citekey order="35">yolov5</bcf:citekey>
+    <bcf:citekey order="36">yolov5</bcf:citekey>
+    <bcf:citekey order="37">pytorch_mobile</bcf:citekey>
+    <bcf:citekey order="38">survey_machine_learning_mobile</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
