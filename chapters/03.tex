@@ -9,14 +9,34 @@ In the following, the given dataset, the training of the network, the evaluation
 
 There are essentially two sources for images of sugar beets and other plants available. One part consists of images taken in sugar beet fields and the other one is Imagenet (\cite{deng2009imagenet}) where a large number of different images with classes is available.
 
-The number of images of sugar beet plants is 10087. This set can be categorized in two different types. The first type is an image with many small sugar beets. The other one is an image with older and bigger plants where the concrete object boundaries are hard to see. One example for each class can be seen in figure \ref{fig:image_types}.
+The number of images of sugar beet plants is 10087. This set can be categorized in multiple different types called (1), (2), (3) and (4). The first type is an image with many small sugar beets. The other one is an image with older and bigger plants where the concrete object boundaries are hard to see. One example for each class (1) and (2) can be seen in figure \ref{fig:image_types}.
 
 \begin{figure}[htb!]
+	\begin{subfigure}{.6\textwidth}
+		\centering
+		\includegraphics[scale=0.18]{figures/image_type1.JPG}
+		\caption{Image type (1). Shows multiple small plants and the boundaries can be seen perfectly.}
+		\label{fig:type_1}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[scale=0.17]{figures/image_type2.jpg}
+		\caption{Image type (2). Shows one larger plant, boundaries are overlapping with neighboring plants.}
+		\label{fig:type_2}
+	\end{subfigure}
+	\begin{subfigure}{.6\textwidth}
+		\centering
+		\includegraphics[scale=0.13]{figures/type_4.png}
+		\caption{Image type (3). Shows many larger plants. The boundaries of single sugar beets can hardly be seen.}
+		\label{fig:type_5}
+	\end{subfigure}
+	\begin{subfigure}{.4\textwidth}
 	\centering
-	\includegraphics[scale=0.15]{figures/image_type1.JPG}
-	\hspace{40pt}
-	\includegraphics[scale=0.15]{figures/image_type2.jpg}
-	\caption{Image types}
+	\includegraphics[scale=0.21]{figures/type_3.jpg}
+	\caption{Image type (4). Shows plants from a different angle than $ 90° $.}
+	\label{fig:type_3}
+	\end{subfigure}
+	\caption{Example images of types (1), (2), (3) and (4).}
 	\label{fig:image_types}
 \end{figure}
 
@@ -39,11 +59,11 @@ As you can see in this figure, the plant in the center of the image is labeled a
 		\hline
 		Source & Number images & Image types \\ % [0.5ex] 
 		\hline\hline
-		TUM & 9461 & One larger plant \\
-		TUM & 123 & Multiple small plants \\
-		Partner & 259 & Mixed \\
-		Drone screenshots & 244 & Multiple larger plants \\
-		Imagenet & 2992 & Other plants and persons \\
+		TUM & 9461 & (1) \\
+		TUM & 123 & (2) \\
+		Partner & 259 & (3) \\
+		Drone screenshots & 244 & (4) \\
+		Imagenet & 2992 & persons/ other plants \\
 		\hline
 	\end{tabular}
 	\caption{Overview over the data set with the available images. Most of them are from TUM and contain about one larger plant.}
