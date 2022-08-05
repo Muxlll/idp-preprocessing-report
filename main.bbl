@@ -27,12 +27,12 @@
            given={Alexey},
            giveni={A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=053d491932411950eccf2bb9a1025d11}{%
+        {{un=1,uniquepart=given,hash=053d491932411950eccf2bb9a1025d11}{%
            family={Wang},
            familyi={W\bibinitperiod},
            given={Chien-Yao},
            giveni={C\bibinithyphendelim Y\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=c81478c691c1bc1cc01404c44b5bd5bf}{%
            family={Liao},
            familyi={L\bibinitperiod},
@@ -67,14 +67,97 @@
       \verb https://arxiv.org/abs/2004.10934
       \endverb
     \endentry
+    \entry{rfcn}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=c80dbb87ee6058c0b81ab8ee017f1170}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Jifeng},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=cf1f0547c288eff0857572dcc12516bb}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=98056d9ddecda0076a31a183e3e69326}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0ef91066dee98e654f9aebd57da00647}{%
+           family={Sugiyama},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=24a834b722f8b79357bd16d08a1e523f}{%
+           family={Luxburg},
+           familyi={L\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+        {{hash=e7e74de725116358b68a6e890c026145}{%
+           family={Guyon},
+           familyi={G\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=36b98b7ab533936cf1b5716148de704f}{%
+           family={Garnett},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{d8450ebca907ed083f8e519d024f34bf}
+      \strng{fullhash}{d8450ebca907ed083f8e519d024f34bf}
+      \strng{bibnamehash}{d8450ebca907ed083f8e519d024f34bf}
+      \strng{authorbibnamehash}{d8450ebca907ed083f8e519d024f34bf}
+      \strng{authornamehash}{d8450ebca907ed083f8e519d024f34bf}
+      \strng{authorfullhash}{d8450ebca907ed083f8e519d024f34bf}
+      \strng{editorbibnamehash}{12a698699c223bd18ce3abc205938f9b}
+      \strng{editornamehash}{3861e63990b163ea11e19c1b21aab186}
+      \strng{editorfullhash}{12a698699c223bd18ce3abc205938f9b}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{R-FCN: Object Detection via Region-based Fully Convolutional Networks}
+      \field{volume}{29}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper/2016/file/577ef1154f3240ad5b9b413aa7346a1e-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper/2016/file/577ef1154f3240ad5b9b413aa7346a1e-Paper.pdf
+      \endverb
+    \endentry
     \entry{survey_machine_learning_mobile}{inproceedings}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=92c1f62b413d7a879f6738cd0050af33}{%
+        {{un=1,uniquepart=given,hash=92c1f62b413d7a879f6738cd0050af33}{%
            family={Dai},
            familyi={D\bibinitperiod},
            given={Xiangfeng},
            giveni={X\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=ebbe66355d830c571538c9fcc57cfb8e}{%
            family={Spasić},
            familyi={S\bibinitperiod},
@@ -114,6 +197,91 @@
       \verb{doi}
       \verb 10.1109/SoutheastCon44009.2020.9249652
       \endverb
+    \endentry
+    \entry{wheat_dataset}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=f30502668571ea6432e37bf9e33d99fb}{%
+           family={David},
+           familyi={D\bibinitperiod},
+           given={Etienne},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a1dc503cd6157f2fdafaa694f1a082b1}{%
+           family={Serouart},
+           familyi={S\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=005dd718f3b829bab9e7e7714b3804a5}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20c39bc1eba9360e34ee354d6ddacd63}{%
+           family={Madec},
+           familyi={M\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e37e6dd43764272f9594c22719016582}{%
+           family={Velumani},
+           familyi={V\bibinitperiod},
+           given={Kaaviya},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=9554eee8643a9d712d8b2c54573f7940}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Shouyang},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=d629ba40b56b1f3070362206453e1639}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xu},
+           giveni={X\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=2816a1498ac2dd6ffd4eaf3bf6219fd7}{%
+           family={Pinto},
+           familyi={P\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=677b53c4660fef6cc509d78d1bcd70ac}{%
+           family={Shafiee},
+           familyi={S\bibinitperiod},
+           given={Shahameh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=83c6d6d51113b899c2a61527fe5b756f}{%
+           family={Tahir},
+           familyi={T\bibinitperiod},
+           given={Izzat\bibnamedelima SA},
+           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {AAAS}%
+      }
+      \strng{namehash}{92564185cc5891ba92b53d98a49a650c}
+      \strng{fullhash}{7fbede42ec82cdfc8001386702a354df}
+      \strng{bibnamehash}{7fbede42ec82cdfc8001386702a354df}
+      \strng{authorbibnamehash}{7fbede42ec82cdfc8001386702a354df}
+      \strng{authornamehash}{92564185cc5891ba92b53d98a49a650c}
+      \strng{authorfullhash}{7fbede42ec82cdfc8001386702a354df}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Plant Phenomics}
+      \field{title}{Global wheat head detection 2021: an improved dataset for benchmarking wheat head detection methods}
+      \field{volume}{2021}
+      \field{year}{2021}
     \endentry
     \entry{deng2009imagenet}{inproceedings}{}
       \name{author}{6}{}{%
@@ -175,14 +343,40 @@
       \field{pages}{248\bibrangedash 255}
       \range{pages}{8}
     \endentry
+    \entry{fast_rcnn}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{bd5dadbe57bedc5957c19a3154c4d424}
+      \strng{fullhash}{bd5dadbe57bedc5957c19a3154c4d424}
+      \strng{bibnamehash}{bd5dadbe57bedc5957c19a3154c4d424}
+      \strng{authorbibnamehash}{bd5dadbe57bedc5957c19a3154c4d424}
+      \strng{authornamehash}{bd5dadbe57bedc5957c19a3154c4d424}
+      \strng{authorfullhash}{bd5dadbe57bedc5957c19a3154c4d424}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE International Conference on Computer Vision (ICCV)}
+      \field{month}{12}
+      \field{title}{Fast R-CNN}
+      \field{year}{2015}
+    \endentry
     \entry{RCNN}{article}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=c2c60ceb4a241891e128295a5ae80aef}{%
+        {{un=1,uniquepart=given,hash=c2c60ceb4a241891e128295a5ae80aef}{%
            family={Girshick},
            familyi={G\bibinitperiod},
            given={Ross\bibnamedelima B.},
            giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=913090a0d65c7a300c602f5a5a5a61e3}{%
            family={Donahue},
            familyi={D\bibinitperiod},
@@ -229,6 +423,42 @@
       \verb http://arxiv.org/abs/1311.2524
       \endverb
     \endentry
+    \entry{wheat_heads}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fef4cac9998d6f9d0a70ced16243d421}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Feixiang},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=5f61775c2fbdd179d018bb797bd0ce1d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{be65189bfe0b574fe4c417dc3186c54b}
+      \strng{fullhash}{be65189bfe0b574fe4c417dc3186c54b}
+      \strng{bibnamehash}{be65189bfe0b574fe4c417dc3186c54b}
+      \strng{authorbibnamehash}{be65189bfe0b574fe4c417dc3186c54b}
+      \strng{authornamehash}{be65189bfe0b574fe4c417dc3186c54b}
+      \strng{authorfullhash}{be65189bfe0b574fe4c417dc3186c54b}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 7th International Conference on Cloud Computing and Big Data Analytics (ICCCBDA)}
+      \field{title}{Wheat Heads Detection via Yolov5 with Weighted Coordinate Attention}
+      \field{year}{2022}
+      \field{pages}{300\bibrangedash 306}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICCCBDA55098.2022.9778925
+      \endverb
+    \endentry
     \entry{7005506}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=6b4b60e909e78633945f3f9c9dc83e01}{%
@@ -249,12 +479,12 @@
            given={Shaoqing},
            giveni={S\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=f85751488058842b5777c7b4074077b5}{%
+        {{un=1,uniquepart=given,hash=f85751488058842b5777c7b4074077b5}{%
            family={Sun},
            familyi={S\bibinitperiod},
            given={Jian},
            giveni={J\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \strng{namehash}{42c4b52dc3a62cebabbc11c73e1afb53}
       \strng{fullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
@@ -278,6 +508,253 @@
       \verb{doi}
       \verb 10.1109/TPAMI.2015.2389824
       \endverb
+    \endentry
+    \entry{discussion_engines}{inproceedings}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=b2472734a998686dff10960f16dd12e9}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72552e66bddd1b0f1d0415e8c8325c4e}{%
+           family={Rathod},
+           familyi={R\bibinitperiod},
+           given={Vivek},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=7437556e576c6f4e2ade58a9aa980ec5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=d767e8e4d733bcf728bcdf2c193462f7}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Menglong},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7786b659281f598c93efa8aabe8947c8}{%
+           family={Korattikara},
+           familyi={K\bibinitperiod},
+           given={Anoop},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a53a5d09d1e6a289f650156f964ec3cf}{%
+           family={Fathi},
+           familyi={F\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=283cecbdc579f4c9098a22907b254877}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f1430f41772f4a524875e509005837c}{%
+           family={Wojna},
+           familyi={W\bibinitperiod},
+           given={Zbigniew},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7dacbb5a6e92ab16944d46ba03705563}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7cd28a25c761aa64034ab0997a2b6ec}{%
+           family={Guadarrama},
+           familyi={G\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d01ba1edf5711066e4d420d9df8d8f43}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{05f07920ee8982acabf9f8d47104665c}
+      \strng{fullhash}{101edf60c60bf3f70a4ff20d156c1181}
+      \strng{bibnamehash}{101edf60c60bf3f70a4ff20d156c1181}
+      \strng{authorbibnamehash}{101edf60c60bf3f70a4ff20d156c1181}
+      \strng{authornamehash}{05f07920ee8982acabf9f8d47104665c}
+      \strng{authorfullhash}{101edf60c60bf3f70a4ff20d156c1181}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{month}{7}
+      \field{title}{Speed/Accuracy Trade-Offs for Modern Convolutional Object Detectors}
+      \field{year}{2017}
+    \endentry
+    \entry{yolov5}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c5c5e5cd7f4f477f617289b32613deb0}{%
+           family={Jocher},
+           familyi={J\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{fullhash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{bibnamehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{authorbibnamehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{authornamehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{authorfullhash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \field{extraname}{1}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ultralytics/yolov5}}
+      \field{note}{Accessed: 2022-06-22}
+      \field{title}{YOLOv5 Github repository}
+      \field{year}{2022}
+      \verb{doi}
+      \verb https://doi.org/10.5281/zenodo.3908559
+      \endverb
+    \endentry
+    \entry{pytorch_hub_yolov5}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c5c5e5cd7f4f477f617289b32613deb0}{%
+           family={Jocher},
+           familyi={J\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{fullhash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{bibnamehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{authorbibnamehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{authornamehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{authorfullhash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \field{extraname}{2}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2022-08-02}
+      \field{title}{YOLOv5 in PyTorch Hub}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.5281/zenodo.6222936
+      \endverb
+    \endentry
+    \entry{release_current}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c5c5e5cd7f4f477f617289b32613deb0}{%
+           family={Jocher},
+           familyi={J\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{fullhash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{bibnamehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{authorbibnamehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{authornamehash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \strng{authorfullhash}{c5c5e5cd7f4f477f617289b32613deb0}
+      \field{extraname}{3}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/ultralytics/yolov5/releases}}
+      \field{note}{Accessed: 2022-08-02}
+      \field{title}{YOLOv5 release version 6.1}
+      \field{year}{2022}
+    \endentry
+    \entry{terrain_example}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4221ab6bf131fb0d9c2bb6aa45999ce0}{%
+           family={Kragh},
+           familyi={K\bibinitperiod},
+           given={Mikkel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbf5be61f10f6efe3157ae2a615ce384}{%
+           family={J{ø}rgensen},
+           familyi={J\bibinitperiod},
+           given={Rasmus\bibnamedelima N.},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=155dc9f976000aded36cea4e9c8ddf75}{%
+           family={Pedersen},
+           familyi={P\bibinitperiod},
+           given={Henrik},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=8378a2bedf74d1ff3effafeb0146799c}{%
+           family={Nalpantidis},
+           familyi={N\bibinitperiod},
+           given={Lazaros},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2a66867134ca479ad036c643c41ad0c9}{%
+           family={Kr{ü}ger},
+           familyi={K\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a10ce73a9405fba0ae600c91ce984650}{%
+           family={Eklundh},
+           familyi={E\bibinitperiod},
+           given={Jan-Olof},
+           giveni={J\bibinithyphendelim O\bibinitperiod}}}%
+        {{hash=12d89ed7954806488bac04f320f416ec}{%
+           family={Gasteratos},
+           familyi={G\bibinitperiod},
+           given={Antonios},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{50940ff669e06d8773e58a25002e52d3}
+      \strng{fullhash}{50940ff669e06d8773e58a25002e52d3}
+      \strng{bibnamehash}{50940ff669e06d8773e58a25002e52d3}
+      \strng{authorbibnamehash}{50940ff669e06d8773e58a25002e52d3}
+      \strng{authornamehash}{50940ff669e06d8773e58a25002e52d3}
+      \strng{authorfullhash}{50940ff669e06d8773e58a25002e52d3}
+      \strng{editorbibnamehash}{0ff376b11a48f940d30a2554fe78e83f}
+      \strng{editornamehash}{0ff376b11a48f940d30a2554fe78e83f}
+      \strng{editorfullhash}{0ff376b11a48f940d30a2554fe78e83f}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Autonomous navigation and operation of agricultural vehicles is a challenging task due to the rather unstructured environment. An uneven terrain consisting of ground and vegetation combined with the risk of non-traversable obstacles necessitates a strong focus on safety and reliability. This paper presents an object detection and terrain classification approach for classifying individual points from 3D point clouds acquired using single multi-beam lidar scans. Using a support vector machine (SVM) classifier, individual 3D points are categorized as either ground, vegetation, or object based on features extracted from local neighborhoods. Experiments performed at a local working farm show that the proposed method has a combined classification accuracy of {\$}{\$}91.6{\backslash},{\backslash}{\%}{\$}{\$}, detecting points belonging to objects such as humans, animals, cars, and buildings with {\$}{\$}81.1{\backslash},{\backslash}{\%}{\$}{\$}accuracy, while classifying vegetation with an accuracy of {\$}{\$}97.5{\backslash},{\backslash}{\%}{\$}{\$}.}
+      \field{booktitle}{Computer Vision Systems}
+      \field{isbn}{978-3-319-20904-3}
+      \field{title}{Object Detection and Terrain Classification in Agricultural Fields Using 3D Lidar Data}
+      \field{year}{2015}
+      \field{pages}{188\bibrangedash 197}
+      \range{pages}{10}
     \endentry
     \entry{labelimg}{misc}{}
       \field{sortinit}{L}
@@ -380,12 +857,12 @@
     \endentry
     \entry{Liu_2018_CVPR}{inproceedings}{}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=71a0fe4c49a825f2c7caf4d51d2b8603}{%
+        {{un=1,uniquepart=given,hash=71a0fe4c49a825f2c7caf4d51d2b8603}{%
            family={Liu},
            familyi={L\bibinitperiod},
            given={Shu},
            giveni={S\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=db9ae9f8b01f502cd5ebe689c86bcf4b}{%
            family={Qi},
            familyi={Q\bibinitperiod},
@@ -428,6 +905,78 @@
       \field{title}{Path Aggregation Network for Instance Segmentation}
       \field{year}{2018}
     \endentry
+    \entry{ssd}{article}{}
+      \name{author}{7}{}{%
+        {{un=1,uniquepart=given,hash=c0e0d23e2d09e45e6f51cc2bcea6d9f9}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=c1826f3465579186aff299a9b0e16ed7}{%
+           family={Anguelov},
+           familyi={A\bibinitperiod},
+           given={Dragomir},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8bbc4c5d96f205bada839e74e0202146}{%
+           family={Erhan},
+           familyi={E\bibinitperiod},
+           given={Dumitru},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed568d9c3bb059e6bf22899fbf170f86}{%
+           family={Szegedy},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b88b81b3441acc4ada675e5512505f9}{%
+           family={Reed},
+           familyi={R\bibinitperiod},
+           given={Scott\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec820780d594e36d11c6e30c7a2614e0}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Cheng-Yang},
+           giveni={C\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=963e9b2526a7150c418b4e9e9d19a82f}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Alexander\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d4145b4ad8209d9eefd91697296598f5}
+      \strng{fullhash}{bd6178049f5b06e729a6bacb2e100e4d}
+      \strng{bibnamehash}{bd6178049f5b06e729a6bacb2e100e4d}
+      \strng{authorbibnamehash}{bd6178049f5b06e729a6bacb2e100e4d}
+      \strng{authornamehash}{d4145b4ad8209d9eefd91697296598f5}
+      \strng{authorfullhash}{bd6178049f5b06e729a6bacb2e100e4d}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{{SSD:} Single Shot MultiBox Detector}
+      \field{volume}{abs/1512.02325}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1512.02325
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1512.02325
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1512.02325
+      \endverb
+    \endentry
     \entry{pytorch_mobile}{misc}{}
       \field{sortinit}{P}
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
@@ -451,12 +1000,12 @@
            given={Santosh\bibnamedelima Kumar},
            giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c2c60ceb4a241891e128295a5ae80aef}{%
+        {{un=1,uniquepart=given,hash=c2c60ceb4a241891e128295a5ae80aef}{%
            family={Girshick},
            familyi={G\bibinitperiod},
            given={Ross\bibnamedelima B.},
            giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=396c6ddedb6f986906fc3e4994d19974}{%
            family={Farhadi},
            familyi={F\bibinitperiod},
@@ -577,26 +1126,109 @@
       \verb http://arxiv.org/abs/1804.02767
       \endverb
     \endentry
+    \entry{faster_rcnn}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Shaoqing},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=c294bbcb0687bdb5113cc4c4cd6ebad3}{%
+           family={Cortes},
+           familyi={C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5fa5574879f8e77bee73db4442b005f7}{%
+           family={Lawrence},
+           familyi={L\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=98056d9ddecda0076a31a183e3e69326}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0ef91066dee98e654f9aebd57da00647}{%
+           family={Sugiyama},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=36b98b7ab533936cf1b5716148de704f}{%
+           family={Garnett},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{008a132af3e2d4ff15eb01a8fb4b005c}
+      \strng{fullhash}{008a132af3e2d4ff15eb01a8fb4b005c}
+      \strng{bibnamehash}{008a132af3e2d4ff15eb01a8fb4b005c}
+      \strng{authorbibnamehash}{008a132af3e2d4ff15eb01a8fb4b005c}
+      \strng{authornamehash}{008a132af3e2d4ff15eb01a8fb4b005c}
+      \strng{authorfullhash}{008a132af3e2d4ff15eb01a8fb4b005c}
+      \strng{editorbibnamehash}{95e40444732d7905041fa015b18cfa44}
+      \strng{editornamehash}{793fcba69f8992e9ba3eee3158927ba8}
+      \strng{editorfullhash}{95e40444732d7905041fa015b18cfa44}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks}
+      \field{volume}{28}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper/2015/file/14bfa6bb14875e45bba028a21ed38046-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper/2015/file/14bfa6bb14875e45bba028a21ed38046-Paper.pdf
+      \endverb
+    \endentry
     \entry{Wang_2020_CVPR_Workshops}{inproceedings}{}
       \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=053d491932411950eccf2bb9a1025d11}{%
+        {{un=1,uniquepart=given,hash=053d491932411950eccf2bb9a1025d11}{%
            family={Wang},
            familyi={W\bibinitperiod},
            given={Chien-Yao},
            giveni={C\bibinithyphendelim Y\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=c81478c691c1bc1cc01404c44b5bd5bf}{%
            family={Liao},
            familyi={L\bibinitperiod},
            given={Hong-Yuan\bibnamedelima Mark},
            giveni={H\bibinithyphendelim Y\bibinitperiod\bibinitdelim M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=0ba2923d42c5bf352ba762a2cca4ad85}{%
+        {{un=1,uniquepart=given,hash=0ba2923d42c5bf352ba762a2cca4ad85}{%
            family={Wu},
            familyi={W\bibinitperiod},
            given={Yueh-Hua},
            giveni={Y\bibinithyphendelim H\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=f3e4ee5422421c0bd54125fdb693f053}{%
            family={Chen},
            familyi={C\bibinitperiod},
@@ -633,37 +1265,171 @@
       \field{title}{CSPNet: A New Backbone That Can Enhance Learning Capability of CNN}
       \field{year}{2020}
     \endentry
-    \entry{yolov5}{misc}{}
-      \field{sortinit}{Y}
-      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
-      \field{labeldatesource}{nodate}
+    \entry{applications_review}{article}{}
+      \name{author}{5}{}{%
+        {{un=1,uniquepart=given,hash=c0a95a41210a037f04e1db4223792879}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=be6f1b6df7f1ddfafad18806238fa391}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=f2cb6caf5572328fc37ef1849ac97bef}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Danfeng},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b29cc5f01d86d6776ea05347f0fea80}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Ran},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf5e5f7ed3e7b3445faf336bac2a6aef}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Qian},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7751cddca07b45971c4a6fdbd7e3ce9a}
+      \strng{fullhash}{d43a95dd6f1cb983586e8c1300d3ba22}
+      \strng{bibnamehash}{d43a95dd6f1cb983586e8c1300d3ba22}
+      \strng{authorbibnamehash}{d43a95dd6f1cb983586e8c1300d3ba22}
+      \strng{authornamehash}{7751cddca07b45971c4a6fdbd7e3ce9a}
+      \strng{authorfullhash}{d43a95dd6f1cb983586e8c1300d3ba22}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://github.com/ultralytics/yolov5}}
-      \field{note}{Accessed: 2022-06-22}
-      \field{title}{YOLOv5 Github repository}
+      \field{journaltitle}{IEEE Geoscience and Remote Sensing Magazine}
+      \field{number}{1}
+      \field{title}{Deep Learning for Unmanned Aerial Vehicle-Based Object Detection and Tracking: A survey}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{91\bibrangedash 124}
+      \range{pages}{34}
       \verb{doi}
-      \verb https://doi.org/10.5281/zenodo.3908559
+      \verb 10.1109/MGRS.2021.3115137
       \endverb
     \endentry
-    \entry{pytorch_hub_yolov5}{misc}{}
-      \field{sortinit}{Y}
-      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
-      \field{labeldatesource}{nodate}
+    \entry{bale_detection}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=16e27adac1b31563e17c86920f0c910e}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ffb1f2e7060f23a7c2e757e3bd10bcf}{%
+           family={Yamada},
+           familyi={Y\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=e9258f856ba3265e0549ab43b6b30b83}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Tianxin},
+           giveni={T\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=9740a53b82fdfe8aa44cc227772fe381}{%
+           family={Digman},
+           familyi={D\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=caa916a0be822afc05074c547d05c598}{%
+           family={Runge},
+           familyi={R\bibinitperiod},
+           given={Troy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{ed4fba73f918a0a695748768c51bfd9a}
+      \strng{fullhash}{b18ef753674bd54e36528c9e0b83bf44}
+      \strng{bibnamehash}{b18ef753674bd54e36528c9e0b83bf44}
+      \strng{authorbibnamehash}{b18ef753674bd54e36528c9e0b83bf44}
+      \strng{authornamehash}{ed4fba73f918a0a695748768c51bfd9a}
+      \strng{authorfullhash}{b18ef753674bd54e36528c9e0b83bf44}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2022-08-02}
-      \field{title}{YOLOv5 in PyTorch Hub}
-      \verb{doi}
-      \verb 10.5281/zenodo.6222936
-      \endverb
+      \field{journaltitle}{Remote Sensing}
+      \field{number}{1}
+      \field{title}{Augmenting Crop Detection for Precision Agriculture with Deep Visual Transfer Learning—A Case Study of Bale Detection}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{pages}{23}
+      \range{pages}{1}
     \endentry
-    \entry{release_current}{misc}{}
-      \field{sortinit}{Y}
-      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
-      \field{labeldatesource}{nodate}
+    \entry{object_detection_history}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=79ecb3ddec80cff3d752091ba8cc0113}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Zhengxia},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a163a5390bc6150e96c215cfd4d1f35f}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Zhenwei},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65c428484ceb9cc9d8774f6bc3df701c}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Yuhong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45f8892411700a9b1d4fcd3acaeeefd0}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Jieping},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f1e770f272358bcece6b9166dd8c3463}
+      \strng{fullhash}{f1e770f272358bcece6b9166dd8c3463}
+      \strng{bibnamehash}{f1e770f272358bcece6b9166dd8c3463}
+      \strng{authorbibnamehash}{f1e770f272358bcece6b9166dd8c3463}
+      \strng{authornamehash}{f1e770f272358bcece6b9166dd8c3463}
+      \strng{authorfullhash}{f1e770f272358bcece6b9166dd8c3463}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://github.com/ultralytics/yolov5/releases}}
-      \field{note}{Accessed: 2022-08-02}
-      \field{title}{YOLOv5 release version 6.1}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Object Detection in 20 Years: {A} Survey}
+      \field{volume}{abs/1905.05055}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1905.05055
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1905.05055
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1905.05055
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
