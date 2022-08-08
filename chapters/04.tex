@@ -16,11 +16,12 @@ The first experiments were made with only a small part of the data set being man
 		0.015 & 0.7 & 0.4 & 0.0 & 0.1 & 0.5 & 0.0 & 0.0 & 0.0 & 0.5 & 1.0 & 0.0 & 0.0 \\
 		\hline
 	\end{tabular}
-	\caption{Values for data augmentation}
+	\caption{Values for data augmentation. Hue, Saturation and Value are given in a fraction. Deg is degree of the rotation, Trans the translation (fraction), scale and shear (also in degree). UD and LR are the probabilities of the image to be flipped up-down (UD) or left-right (LR). Mosaic, mixup and copy paste are also given as probabilities. }
 	\label{tab:augmentation_exp1}
 \end{table}
 
-All in all, small data augmentation is used. $ 85\% $ of the data was used as training set and $ 15\% $ as validation set.\\
+All in all, small data augmentation is used. $ 85\% $ of the data was used as training set and $ 15\% $ as validation set. The different image types were divided equally into each set (training and validation).\\
+
 
 For the training and validation set, the results were accurate. With a real number of 9110 sugar beets and a detected number of plants of 8162, this results in an accuracy of $ 89,6\% $. Although for new, unseen images, the accuracy is very low. Here, the number of labeled sugar beets is 575 and only 68 are detected. An overall accuracy of $ 11,8\% $ results. In this experiment, only the number of detected and real sugar beets are observed, not the location or size of the bounding boxes. However, the results show that this model is not sufficient for detecting the boundaries of sugar beets. Two examples of detected objects can be seen in figure \ref{fig:results_experiment_1}.
 
@@ -28,7 +29,7 @@ For the training and validation set, the results were accurate. With a real numb
 	\centering
 	\includegraphics[scale=0.178]{figures/results_exp1_1.png}
 	\includegraphics[scale=0.33]{figures/results_exp1_2.JPEG}
-	\caption{Examples of detected images.}
+	\caption{Examples of whole images being detected as one sugar beet. That was one of the problems that had to be faced.}
 	\label{fig:results_experiment_1}
 \end{figure}
 
@@ -40,7 +41,7 @@ Another problem of this model is the high false positive rate in case of other p
 	\centering
 	\includegraphics[scale=0.458]{figures/false_positive_1.png}
 	\includegraphics[scale=0.3]{figures/false_positive_2.png}
-	\caption{Examples of other plants also detected as sugar beets.}
+	\caption{Examples of other plants also detected as sugar beets. That was another problem that had to be solved.}
 	\label{fig:false_positives}
 \end{figure}
 
@@ -103,7 +104,7 @@ Although the predicted results are not too good by now, the model has already se
 		0.015 & 0.7 & 0.4 & 0.0 & 0.1 & 0.9 & 0.0 & 0.0 & 0.0 & 0.5 & 1.0 & 0.1 & 0.1\\
 		\hline
 	\end{tabular}
-	\caption{Values for higher data augmentation}
+	\caption{Values for higher data augmentation. Meanings of the variables are the same as in \ref{tab:augmentation_exp1}. Now, higher values are used compared to the first one.}
 	\label{tab:high_augmentation}
 \end{table}
 
