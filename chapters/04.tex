@@ -46,14 +46,44 @@ Another problem of this model is the high false positive rate in case of other p
 
 You can see that also random plants are detected as sugar beets which should not be the case.\\
 
-Testing the model with a test set consisting of the heterogeneous Partner data and 400 TUM images which contain multiple small plants and also larger ones, yields the following result which can be seen in figure \ref{fig:exp1_curve}.
+The following figure \ref{fig:AUC_comparison} shows the testing result of different training strategies and setting to mitigate this problem.
 
 \begin{figure}[htb!]
-	\centering
-	\includegraphics[scale=0.15]{figures/exp1_curve.png}
-	\caption{P R curve first exp}
-	\label{fig:exp1_curve}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.08]{figures/exp1_curve.png}
+		\caption{P-R-curve for the first experiment. With mainly automatically labeled images, an average precision of only 0.741 can be achieved.}
+		\label{fig:AUC_1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.08]{figures/no_pre_low_dat.png}
+		\caption{P-R-curve for the second experiment. Now, the AUC has increased to 0.818 by adding manually labeled images. }
+		\label{fig:AUC_2}
+	\end{subfigure}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.08]{figures/no_pre_high_dat.png}
+		\caption{P-R-curve of third experiment. Now, higher data augmentation is used, leading to higher AUC of 0.839.}
+		\label{fig:AUC_3}
+	\end{subfigure}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.08]{figures/yes_pre_low_dat.png}
+		\caption{P-R-curve of fourth experiment. Now, the training was done with two classes (also other\_plant). The resulting AUC is 0.865.}
+		\label{fig:AUC_4}
+	\end{subfigure}
+	\begin{subfigure}{1\textwidth}
+		\centering
+		\includegraphics[scale=0.08]{figures/yes_pre_high_dat.png}
+		\caption{P-R-curve of last experiment. With only one class and higher data augmentation, an average precision of 0.872 can be achieved.}
+		\label{fig:AUC_5}
+	\end{subfigure}
+	\caption{Comparison of testing P-R-curves of the different training experiments.}
+	\label{fig:AUC_comparison}
 \end{figure}
+
+Testing the model with a test set consisting of the heterogeneous Partner data and 400 TUM images which contain multiple small plants and also larger ones, yields the following result which can be seen in figure \ref{fig:AUC_1}.
 
 A perfect model would have an area under curve of $ 1.0 $. This one has $ 0.741 $ which still has room for improvement.\\
 
@@ -77,57 +107,57 @@ Although the predicted results are not too good by now, the model has already se
 	\label{tab:high_augmentation}
 \end{table}
 
-The first experiment is done from scratch without pretraining and lower data augmentation. The dataset used is labeled completely by hand. The results of the tests can be seen in figure \ref{fig:no_pre_low_dat}.
+The first experiment is done from scratch without pretraining and lower data augmentation. The dataset used is labeled completely by hand. The results of the tests can be seen in figure \ref{fig:AUC_2}.
 
-\begin{figure}[htb!]
-	\centering
-	\includegraphics[scale=0.15]{figures/no_pre_low_dat.png}
-	\caption{P R no pre low dat}
-	\label{fig:no_pre_low_dat}
-\end{figure}
 
 With an AUC (area under curve) of $ 0.818 $, it has already better results compared to the first experiment. The reason is the more exact labeling. \\
 
-In the next training, again no pretrained model was used. Instead, the parameters were adjusted to use higher data augmentation. The results of the testing can be seen in figure \ref{fig:no_pre_high_dat}.
+In the next training, again no pretrained model was used. Instead, the parameters were adjusted to use higher data augmentation. The results of the testing can be seen in figure \ref{fig:AUC_3}.
 
-\begin{figure}[htb!]
-	\centering
-	\includegraphics[scale=0.15]{figures/no_pre_high_dat.png}
-	\caption{P R no pre low dat}
-	\label{fig:no_pre_high_dat}
-\end{figure}
 
 You can see that an improvement can be achieved with an AUC of $ 0.839 $ (compare $ 0.818 $ from before). We can conclude from this that data augmentation has quiet a high impact on the accuracy. \\
 
-In the next experiment, the pretrained model from before is used. The data augmentation is again the higher one and here, the images of other plants from Imagenet are labeled with other\_plant. Testing results can be seen in figure \ref{fig:yes_pre_low_dat}.
-
-\begin{figure}[htb!]
-	\centering
-	\includegraphics[scale=0.15]{figures/yes_pre_low_dat.png}
-	\caption{P R no pre low dat}
-	\label{fig:yes_pre_low_dat}
-\end{figure}
+In the next experiment, the pretrained model from before is used. The data augmentation is again the higher one and here, the images of other plants from Imagenet are labeled with other\_plant. Testing results can be seen in figure \ref{fig:AUC_4}.
 
 With an AUC of $ 0.865 $, the prediction accuracy again has improved. \\
 
-In the next experiment, the difference to the previous one is that the images from Imagenet are not labeled at all. As already mentioned, the problem of the inexact labeling of the Imagenet pictures can sometimes lead to unintended predictions. The testing results of this experiment can be seen in figure \ref{fig:yes_pre_high_dat}.
-
-\begin{figure}[htb!]
-	\centering
-	\includegraphics[scale=0.15]{figures/yes_pre_high_dat.png}
-	\caption{P R no pre low dat}
-	\label{fig:yes_pre_high_dat}
-\end{figure}
+In the next experiment, the difference to the previous one is that the images from Imagenet are not labeled at all. As already mentioned, the problem of the inexact labeling of the Imagenet pictures can sometimes lead to unintended predictions. The testing results of this experiment can be seen in figure \ref{fig:AUC_5}.
 
 This model has the best AUC with $ 0.872 $.\\
 
-Now with these improvements, the new predictions are more accurate and also, the problem of the second class other\_plant is no longer existant. Examples for current predictions can be seen in figure \ref{fig:current_predictions}.
+
+The accuracy measured in AUC of the P-R-curve, improved with the different training settings. Figure \ref{fig:direct_comparison} visualizes this again. There, the average precisions of each model are compared. 
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}
+	\begin{axis} 	 [
+	ybar,
+	tickwidth         = 0pt,
+	enlarge x limits  = 0.2,
+	enlarge y limits  = 0.0002,
+	nodes near coords={\pgfmathprintnumber[precision=4]{\pgfplotspointmeta}},
+	%nodes near coords,
+	symbolic x coords = {(a), (b),
+		(c), (d), (e)},
+	]
+	\addplot coordinates { ((a),0.741) ((b),0.818)
+		((c),0.839) ((d),0.865) ((e),0.872) };
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Direct comparison of the average precision of the different training experiments. At first, the AUC increases fast. A saturation can be seen at the last experiments.}
+	\label{fig:direct_comparison}
+\end{figure}
+
+It can be observed that the best improvement is made with the exact labeled data. In general, the precision gets better with different training settings and techniques, but the difference between them decreases. This might be a saturation where no big improvements can be made anymore. \\
+
+Now with these improvements, the new predictions are more accurate and also, the problem of the second class other\_plant is no longer existent. Examples for current predictions can be seen in figure \ref{fig:current_predictions}.
 
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[scale=0.2]{figures/pred1.png}
 	\includegraphics[scale=0.2]{figures/pred2.png}
-	\caption{Predictions}
+	\caption{Predictions of sugar beets in screenshots of drone videos. Now, single plants are detected with high accuracy of bounding boxes. }
 	\label{fig:current_predictions}
 \end{figure}
 
@@ -143,7 +173,7 @@ First experiments are made with the models which are pretrained using the COCO d
 	\centering
 	\includegraphics[scale=0.1]{figures/comp_small.png}
 	\includegraphics[scale=0.1]{figures/comp_medium.png}
-	\caption{Comparison}
+	\caption{Comparison of small and medium sized model. Left one (small model) has AUC of 0.806 and right one (medium) AUC of 0.805.}
 	\label{fig:comparison_small_medium}
 \end{figure}
 
@@ -153,8 +183,8 @@ With the knowledge of the large model to include background images and use highe
 
 \begin{figure}[htb!]
 	\centering
-	\includegraphics[scale=0.2]{figures/result_small.png}
-	\caption{Result small model}
+	\includegraphics[scale=0.15]{figures/result_small.png}
+	\caption{Result of the better trained small model. Now, the average precision is 0.858.}
 	\label{fig:result_small_one}
 \end{figure}
 
