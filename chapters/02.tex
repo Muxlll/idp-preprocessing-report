@@ -23,7 +23,7 @@ To achieve this, a convolutional neural network is used in combination with full
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[scale=0.25]{figures/YOLO_network.png}
-	\caption{The network consists of 24 convolutional and two fully connected layers. In this case, $ S = 7, B = 2 and C = 20 $, so a tensor of size $ 7 \times 7 \times 30 $ results. Taken from \cite{yolov1}.}
+	\caption{The network consists of 24 convolutional and two fully connected layers. In this case, $ S = 7, B = 2 $ and $ C = 20 $, so a tensor of size $ 7 \times 7 \times 30 $ results. Taken from \cite{yolov1}.}
 	\label{fig:YOLO_network}
 \end{figure}
 
@@ -51,13 +51,13 @@ The main difference to YOLOv2 is that in the new version presented by \cite{yolo
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[scale=0.28]{figures/yolov3_architecture.png}
-	\caption{Darknet-53 consists of 53 convolutional layers. Taken from \cite{yolov3}.}
+	\caption{Precise description of Darknet-53 network which consists of 53 convolutional layers. Taken from \cite{yolov3}.}
 	\label{fig:yolov3_architecture}
 \end{figure}
 
 It is based on the architecture from YOLOv2 and Darknet-19 and has 53 convolutional layers. It is a deeper network, although the speeds are still much better than other comparable object detection models. 
 
-The results show that the accuracy is comparable with ResNet-101 and ResNet-152, Top-5 is even best compared to the others. Additionally, the detectable frames per seconds are much higher than the other models.\\
+The results of the authors show that the accuracy is comparable with ResNet-101 and ResNet-152, Top-5 is even best compared to the others. Additionally, the detectable frames per seconds are much higher than the other models.\\
 
 The authors also present idea that did not improve the network. One thing is anchor box x,y offset predictions which predicts the coordinates as a multiple of the box width or height using linear activation. Additionally, linear x,y predictions instead of logistic which directly predicts the coordinate offset using linear instead of logistic activation decreased the model accuracy. Also the use of focal loss which adds an additional factor to the standard cross entropy loss did not improve the model. Lastly, a dual IOU threshold and truth assignment which is comparable to the use in the Faster R-CNN network was tried out. Essentially, two thresholds is defined which partitions the interval $ [0,1] $ into three parts. The highest part is a positive example, the middle part is ignored and the lowest part is a negative example. 
 

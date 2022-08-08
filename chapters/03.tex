@@ -83,26 +83,26 @@ To train the network, the pictures have to be labeled. For each image file, one 
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[scale=0.2]{figures/labeling.png}
-	\caption{Labeling with labelImg}
+	\caption{Labeling images with labelImg which provides a graphical user interface to draw bounding boxes into the pictures.}
 	\label{fig:labeling}
 \end{figure}
 
-As you can see in this figure, the plant in the center of the image is labeled as sugar beet. The rectangle of the object has to be as exact as possible to obtain best results in predictions. Although especially in the case of big plants, this is not always easy because neighboring sugar beets are overlapping and the plant boundaries can not even be seen very clearly with the human eye. Nevertheless, all available images were labeled manually to get best possible results. An overview of the complete data set can be seen in table \ref{tab:dataset}.\\
+As you can see in this figure, the plant in the center of the image is labeled as sugar beet. The rectangle of the object has to be as exact as possible to obtain best results in predictions. Although especially in the case of big plants, this is not always easy because neighboring sugar beets are overlapping and the plant boundaries can not even be seen very clearly with the human eye. Nevertheless, all available images were labeled manually to get best possible results. An overview of the complete data set can be seen in figure \ref{fig:bar_chart}.\\
 
-All in all, the most available images contain about one larger plant from above which can also be seen in figure \ref{fig:bar_chart}. The biggest variety of image types can be seen from the Partner. These were taken in very different angles and contain various damages ranging from nearly no to high destruction. The drone screenshots are similar to the TUM data set but are taken from a bit more far above. The drones captured most of the time more than one large plant at a time resulting in overlapping sugar beets again. This overview in the table \ref{tab:dataset} shows that much data was gathered and labeled. Compared to the use case where the plants should be detected, the available data is very suitable for the application as it has many different cases ranging from many plants on one images to only containing one sugar beet. Also the damage classes are distributed meaning that images with very different degree of damage are available.
+All in all, the most available images contain about one larger plant from above which can also be seen in figure \ref{fig:bar_chart}. The biggest variety of image types can be seen from the Partner. These were taken in very different angles and contain various damages ranging from nearly no to high destruction. The drone screenshots are similar to the TUM data set but are taken from a bit more far above. The drones captured most of the time more than one large plant at a time resulting in overlapping sugar beets again. This overview in the figure \ref{fig:bar_chart} shows that much data was gathered and labeled. Compared to the use case where the plants should be detected, the available data is very suitable for the application as it has many different cases ranging from many plants on one images to only containing one sugar beet. Also the damage classes are distributed meaning that images with very different degree of damage are available.
 
 \section{Training}
 For the training of the YOLOv5 model, different parameters and other settings have to be specified. One first thing is the decision between different model sizes. As described in the description of YOLOv5, there are different possibilities. The ones we are concentrating on are the small, medium, and large one. For each of them, a pretrained model on the COCO data set by \cite{COCO} with 300 epochs and default settings are available (\cite{yolov5}). This data set contains 328 thousand images with 2.5 million instances of 91 object classes. Alternatively, the raw model without pretraining can be used. In a configuration file, many different hyperparameters can be adjusted such as box, class and obj loss gain. Also the IoU (intersection over union) training threshold can be set. This value determines the fraction of the area of the intersection of two bounding boxes over the union of them. The highest achievable value is 1 which means that the predicted box is exactly the same as the labeled box. Many other parameters for image augmentation are also available. One example therefore is hue, saturation, and value which are then just changed in the image. Also degrees of rotation, translation, scaling, shearing and the perspective can be adjusted. More complex ones are the probability of flipping the image upside down or left-right, respectively. Additionally, mosaic can be chosen. This means that many different images with their labels are concatenated to form a larger image. Also the probability for mixup and copy paste can be chosen independently. Examples for the last three augmentations can be seen in figure \ref{fig:augmentation}.\\
 
 
-\begin{figure}[h!]
+\begin{figure}[htbp!]
 	\centering
-	\includegraphics[scale=0.2]{figures/mosaic.png}
+	\includegraphics[scale=0.18]{figures/mosaic.png}
 	\hspace{40pt}
-	\includegraphics[scale=0.2]{figures/mixup.png}
+	\includegraphics[scale=0.18]{figures/mixup.png}
 	\hspace{40pt}
-	\includegraphics[scale=0.3]{figures/copy-paste.png}
-	\caption{Augmentation types, taken from \cite{yolov5}}
+	\includegraphics[scale=0.27]{figures/copy-paste.png}
+	\caption{Data augmentation types. These techniques can be used to combine different images as new input for training. The first row shows mosaic which just concatenates them. Middle row is mixup laying several images behind each other. Last row is copy-paste which duplicates different objects into other pictures. Taken from \cite{yolov5}}
 	\label{fig:augmentation}
 \end{figure}
 
