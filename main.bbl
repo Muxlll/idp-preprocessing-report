@@ -595,6 +595,68 @@
       \field{title}{Speed/Accuracy Trade-Offs for Modern Convolutional Object Detectors}
       \field{year}{2017}
     \endentry
+    \entry{apple_detection}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=c1447b3ead7fa8f45ce1170480e4a4a2}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cae15d6e86e78d65f3b84e48616d2fdb}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Xiaoxiao},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ddf175b31119450d65155395a464d4cc}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d627c895a7726afc8a55a9fa241c4b19}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=884df7ab45641d489531d7b9dba66003}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhuo},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6deea2cba713f440ce70cc26eb25247}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Dean},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{9a4c6681a70b722135bea9d11ec96c65}
+      \strng{fullhash}{f2bccb9119c361dd3f570ac3cbc2d5e7}
+      \strng{bibnamehash}{f2bccb9119c361dd3f570ac3cbc2d5e7}
+      \strng{authorbibnamehash}{f2bccb9119c361dd3f570ac3cbc2d5e7}
+      \strng{authornamehash}{9a4c6681a70b722135bea9d11ec96c65}
+      \strng{authorfullhash}{f2bccb9119c361dd3f570ac3cbc2d5e7}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Food Process Engineering}
+      \field{number}{11}
+      \field{title}{Apple target recognition method in complex environment based on improved YOLOv4}
+      \field{volume}{44}
+      \field{year}{2021}
+      \field{pages}{e13866}
+      \range{pages}{-1}
+    \endentry
     \entry{yolov5}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c5c5e5cd7f4f477f617289b32613deb0}{%
@@ -975,6 +1037,47 @@
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1512.02325
+      \endverb
+    \endentry
+    \entry{sugar_beet_mechanical_damage}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f8ec73b34afd45530d58e3ded824265f}{%
+           family={Nasirahmadi},
+           familyi={N\bibinitperiod},
+           given={Abozar},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b0d8cfb045035d0925281feb9d18a1a}{%
+           family={Wilczek},
+           familyi={W\bibinitperiod},
+           given={Ulrike},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2082cbd870b2c5f170cdba12385adb4}{%
+           family={Hensel},
+           familyi={H\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \strng{fullhash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \strng{bibnamehash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \strng{authorbibnamehash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \strng{authornamehash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \strng{authorfullhash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Agriculture}
+      \field{title}{Sugar Beet Damage Detection during Harvesting Using Different Convolutional Neural Network Models}
+      \field{volume}{11}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3390/agriculture11111111
       \endverb
     \endentry
     \entry{metrics_survey}{inproceedings}{}

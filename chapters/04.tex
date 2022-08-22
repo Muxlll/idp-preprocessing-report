@@ -28,7 +28,7 @@ For the training and validation set, the results were accurate. With a real numb
 	\centering
 	\includegraphics[scale=0.178]{figures/results_exp1_1.png}
 	\includegraphics[scale=0.33]{figures/results_exp1_2.JPEG}
-	\caption{Examples of whole images being detected as one sugar beet. That was one of the problems that had to be faced.}
+	\caption{Examples of whole images being detected as one sugar beet.}
 	\label{fig:results_experiment_1}
 \end{figure}
 
@@ -136,6 +136,8 @@ The accuracy measured in AUC of the P-R-curve, improved with the different train
 	tickwidth         = 0pt,
 	enlarge x limits  = 0.2,
 	enlarge y limits  = 0.0002,
+	ymin = 0.7,
+	ymax = 0.9,
 	nodes near coords={\pgfmathprintnumber[precision=4]{\pgfplotspointmeta}},
 	%nodes near coords,
 	symbolic x coords = {(a), (b),
@@ -171,8 +173,9 @@ First experiments are made with the models which are pretrained using the COCO d
 
 \begin{figure}[htb!]
 	\centering
-	\includegraphics[scale=0.1]{figures/comp_small.png}
-	\includegraphics[scale=0.1]{figures/comp_medium.png}
+	\includegraphics[scale=0.4]{figures/comparison_small_medium.png}
+	%\includegraphics[scale=0.1]{figures/comp_small.png}
+	%\includegraphics[scale=0.1]{figures/comp_medium.png}
 	\caption{Comparison of small and medium sized model. Left one (small model) has AUC of 0.806 and right one (medium) AUC of 0.805.}
 	\label{fig:comparison_small_medium}
 \end{figure}
@@ -193,13 +196,24 @@ It can be seen that the accuracy has further improved compared to the first expe
 \section{Comparison and Discussion}
 In this section, a comparison is made and a general discussion about the models introduced and the object detection in general is presented.
 
-Now the first aspect is the type of model. YOLO is in general very efficient due to the architecture and the idea of processing the image once (\"you only look once\"). However, in the real time application of detecting the plants in the field, big differences between the large and small architectures can be observed. While the large model takes nearly half a second per image, the small one can predict the labels of a videostream nearly 10 times per second. This makes it very hard to apply the model in-place in the mobile application as it would not be very user-friendly.
+Now the first aspect is the type of model. YOLO is in general very efficient due to the architecture and the idea of processing the image once ("you only look once"). However, in the real time application of detecting the plants in the field, big differences between the large and small architectures can be observed. While the large model takes nearly half a second per image, the small one can predict the labels of a videostream nearly 10 times per second. This makes it very hard to apply the model in-place in the mobile application as it would not be very user-friendly.
 
-One next aspect is the accuracy of predicted labels. While the large model has an AUC of $ 87.2\% $, the small model has an AUC of $ 85.8\% $. As expected, the larger models predicts the bounding boxes of sugar beets in fields more accurately. But the difference to the small model is very low. We also have to keep in mind that about $ 10000 $ images of sugar beets were labeled manually. Of course, this was done as exactly as possible, but in many cases, the borders of sugar beets were not clearly visible at first or even second glance leading to small errors in the labeling. Especially in images of larger sugar beet plants, the bounding box labeling by hand is very hard because of the overlapping leafs. Especially with this background, the small difference of accuracy between large and small model is not too important.\\
+One next aspect is the accuracy of predicted labels. While the large model has an AUC of $ 87.2\% $, the small model has an AUC of $ 85.8\% $. This can be directly seen in figure \ref{fig:final_comparison}. 
+
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[scale=0.6]{figures/final_comparison.png}
+	\caption{Comparison of the test results of the two different final models which were optimized.}
+	\label{fig:final_comparison}
+\end{figure}
+
+As expected, the larger models predicts the bounding boxes of sugar beets in fields more accurately. But the difference to the small model is very low. We also have to keep in mind that about $ 10000 $ images of sugar beets were labeled manually. Of course, this was done as exactly as possible, but in many cases, the borders of sugar beets were not clearly visible at first or even second glance leading to small errors in the labeling. Especially in images of larger sugar beet plants, the bounding box labeling by hand is very hard because of the overlapping leafs. Especially with this background, the small difference of accuracy between large and small model is not too important.\\
 
 All in all, this leads to the decision of implementing the small model directly in the application. It has two advantages. The first is that the user can directly see if a plant is detected and immediately adjust the camera position and angle. Another possibility is the implementation of adjusting the bounding box so that a different part of the image is cropped if the user thinks that the prediction is not correct enough. This leads to more flexibility of the application.
 
-The following images show results of detected sugar beets. They can be seen in figure \ref{fig:final_results} and some properties of the model can be followed. The first two examples (figure \ref{fig:result_1} and \ref{fig:result_2}) show easier cases. Image \ref{fig:result_1} is already very similar to the standardized format. The camera angle is $ 90° $ and the plant is centered. The second one \ref{fig:result_2} depicts small plants where the boundaries do not overlap and the soil has a completely different color than the plants which makes the detection easier. Example \ref{fig:result_3} shows an edge case. It shows two half plants at the top and right border of the image. They have high damage and are not centered on the image. However, one sugar beet plant is detected at the top of the picture because the structure of the plant was learned. In this case, the live application in the app helps the user to find the right position of the camera. He would have to move it to the top to capture the whole plant. In figures \ref{fig:result_4} and \ref{fig:result_5}, many larger plants are depicted. In the first one (\ref{fig:result_4}), 5 plants are detected with low confidence because it is very hard to find the borders because of the overlaps. However also in this case, the user of the app can use this information to hold the camera closer to the field. In the last image \ref{fig:result_5}, two plants are detected with higher confidence. Especially the upper one can be detected very well because the boundaries can be seen much better than all other sugar beets in this picture. Additionally, the source of the leafs can be seen here which makes it easier to center the bounding box on the plant. This is a tendency that can be observed for the whole model. If this is the case, the bounding box is much better than in cases of leafs not being structured.
+The following images show results of detected sugar beets. They can be seen in figure \ref{fig:final_results} and some properties of the model can be followed. The first two examples (figure \ref{fig:result_1} and \ref{fig:result_2}) show easier cases. Image \ref{fig:result_1} is already very similar to the standardized format. The camera angle is $ 90° $ and the plant is centered. The second one \ref{fig:result_2} depicts small plants where the boundaries do not overlap and the soil has a completely different color than the plants which makes the detection easier. Example \ref{fig:result_3} shows an edge case. It shows two half plants at the top and right border of the image. They have high damage and are not centered on the image. However, one sugar beet plant is detected at the top of the picture because the structure of the plant was learned. In this case, the live application in the app helps the user to find the right position of the camera. He would have to move it to the top to capture the whole plant. In figures \ref{fig:result_4} and \ref{fig:result_5}, many larger plants are depicted. In the first one (\ref{fig:result_4}), 5 plants are detected with low confidence because it is very hard to find the borders because of the overlaps. However also in this case, the user of the app can use this information to hold the camera closer to the field. In the last image \ref{fig:result_5}, two plants are detected with higher confidence. Especially the upper one can be detected very well because the boundaries can be seen much better than all other sugar beets in this picture. Additionally, the source of the leafs can be seen here which makes it easier to center the bounding box on the plant. This is a tendency that can be observed for the whole model. If this is the case, the bounding box is much better than in cases of leafs not being structured.\\
+
+Other studies also used YOLO networks as they are very accurate while still being fast (e.g. \cite{sugar_beet_mechanical_damage} and \cite{apple_detection}). Compared to the results in our application case, \cite{sugar_beet_mechanical_damage} had better final precision of about $ 94\% $. However, it is difficult to directly compare the results because the application case and circumstances are different. For example the object that has to be predicted is different which leads to another data set. 
 
 \begin{figure}[htb!]
 	\begin{subfigure}{.4\textwidth}
