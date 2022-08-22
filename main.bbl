@@ -977,6 +977,56 @@
       \verb http://arxiv.org/abs/1512.02325
       \endverb
     \endentry
+    \entry{sugar_beets_other}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f8ec73b34afd45530d58e3ded824265f}{%
+           family={Nasirahmadi},
+           familyi={N\bibinitperiod},
+           given={Abozar},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b0d8cfb045035d0925281feb9d18a1a}{%
+           family={Wilczek},
+           familyi={W\bibinitperiod},
+           given={Ulrike},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2082cbd870b2c5f170cdba12385adb4}{%
+           family={Hensel},
+           familyi={H\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \strng{fullhash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \strng{bibnamehash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \strng{authorbibnamehash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \strng{authornamehash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \strng{authorfullhash}{9ada0ec52cc4cdb65b9ca9c4a11d4b3f}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Mechanical damages of sugar beet during harvesting affects the quality of the final products and sugar yield. The mechanical damage of sugar beet is assessed randomly by operators of harvesters and can depend on the subjective opinion and experience of the operator due to the complexity of the harvester machines. Thus, the main aim of this study was to determine whether a digital two-dimensional imaging system coupled with convolutional neural network (CNN) techniques could be utilized to detect visible mechanical damage in sugar beet during harvesting in a harvester machine. In this research, various detector models based on the CNN, including You Only Look Once (YOLO) v4, region-based fully convolutional network (R-FCN) and faster regions with convolutional neural network features (Faster R-CNN) were developed. Sugar beet image data during harvesting from a harvester in different farming conditions were used for training and validation of the proposed models. The experimental results showed that the YOLO v4 CSPDarknet53 method was able to detect damage in sugar beet with better performance (recall, precision and F1-score of about 92, 94 and 93%, respectively) and higher speed (around 29 frames per second) compared to the other developed CNNs. By means of a CNN-based vision system, it was possible to automatically detect sugar beet damage within the sugar beet harvester machine.}
+      \field{issn}{2077-0472}
+      \field{journaltitle}{Agriculture}
+      \field{number}{11}
+      \field{title}{Sugar Beet Damage Detection during Harvesting Using Different Convolutional Neural Network Models}
+      \field{volume}{11}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.3390/agriculture11111111
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2077-0472/11/11/1111
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2077-0472/11/11/1111
+      \endverb
+    \endentry
     \entry{metrics_survey}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=d115bdfa8f1fff2c9e1d606791bfae43}{%
