@@ -16,11 +16,11 @@ The first experiments were made with only a small part of the data set being man
 		0.015 & 0.7 & 0.4 & 0.0 & 0.1 & 0.5 & 0.0 & 0.0 & 0.0 & 0.5 & 1.0 & 0.0 & 0.0 \\
 		\hline
 	\end{tabular}
-	\caption{Values for data augmentation}
+	\caption{Values for data augmentation. Hue, Saturation and Value are given in a fraction. Deg is degree of the rotation, Trans the translation (fraction), scale and shear (also in degree). UD and LR are the probabilities of the image to be flipped up-down (UD) or left-right (LR). Mosaic, mixup and copy paste are also given as probabilities. }
 	\label{tab:augmentation_exp1}
 \end{table}
 
-All in all, small data augmentation is used. $ 85\% $ of the data was used as training set and $ 15\% $ as validation set.\\
+All in all, small data augmentation is used. $ 85\% $ of the data was used as training set and $ 15\% $ as validation set. The different image types were divided equally into each set (training and validation).\\
 
 For the training and validation set, the results were accurate. With a real number of 9110 sugar beets and a detected number of plants of 8162, this results in an accuracy of $ 89,6\% $. Although for new, unseen images, the accuracy is very low. Here, the number of labeled sugar beets is 575 and only 68 are detected. An overall accuracy of $ 11,8\% $ results. In this experiment, only the number of detected and real sugar beets are observed, not the location or size of the bounding boxes. However, the results show that this model is not sufficient for detecting the boundaries of sugar beets. Two examples of detected objects can be seen in figure \ref{fig:results_experiment_1}.
 
@@ -28,7 +28,7 @@ For the training and validation set, the results were accurate. With a real numb
 	\centering
 	\includegraphics[scale=0.178]{figures/results_exp1_1.png}
 	\includegraphics[scale=0.33]{figures/results_exp1_2.JPEG}
-	\caption{Examples of detected images.}
+	\caption{Examples of whole images being detected as one sugar beet. That was one of the problems that had to be faced.}
 	\label{fig:results_experiment_1}
 \end{figure}
 
@@ -40,7 +40,7 @@ Another problem of this model is the high false positive rate in case of other p
 	\centering
 	\includegraphics[scale=0.458]{figures/false_positive_1.png}
 	\includegraphics[scale=0.3]{figures/false_positive_2.png}
-	\caption{Examples of other plants also detected as sugar beets.}
+	\caption{Examples of other plants also detected as sugar beets. That was another problem that had to be solved.}
 	\label{fig:false_positives}
 \end{figure}
 
@@ -103,7 +103,7 @@ Although the predicted results are not too good by now, the model has already se
 		0.015 & 0.7 & 0.4 & 0.0 & 0.1 & 0.9 & 0.0 & 0.0 & 0.0 & 0.5 & 1.0 & 0.1 & 0.1\\
 		\hline
 	\end{tabular}
-	\caption{Values for higher data augmentation}
+	\caption{Values for higher data augmentation. Meanings of the variables are the same as in \ref{tab:augmentation_exp1}. Now, higher values are used compared to the first one.}
 	\label{tab:high_augmentation}
 \end{table}
 
@@ -183,12 +183,12 @@ With the knowledge of the large model to include background images and use highe
 
 \begin{figure}[htb!]
 	\centering
-	\includegraphics[scale=0.15]{figures/result_small.png}
+	\includegraphics[scale=0.12]{figures/result_small.png}
 	\caption{Result of the better trained small model. Now, the average precision is 0.858.}
 	\label{fig:result_small_one}
 \end{figure}
 
-It can be seen that the accuracy has further improved compared to the first experiments. Now, with small recall (nearly up to 0.3), a precision of about $ 100\% $ can be achieved. Additionally, the precision stays very high with increasing recall. The curve now drops much faster, but later. The overall AUC is increased by approximately $ 6\% $ and lays at $ 0.858 $.
+It can be seen that the accuracy has further improved compared to the first experiments. Now, with small recall (nearly up to 0.3), a precision of about $ 100\% $ can be achieved. The curve now drops much faster, but later. The overall AUC is increased by approximately $ 6\% $ and lays at $ 0.858 $.
 
 \section{Comparison and Discussion}
 In this section, a comparison is made and a general discussion about the models introduced and the object detection in general is presented.
@@ -197,7 +197,7 @@ Now the first aspect is the type of model. YOLO is in general very efficient due
 
 One next aspect is the accuracy of predicted labels. While the large model has an AUC of $ 87.2\% $, the small model has an AUC of $ 85.8\% $. As expected, the larger models predicts the bounding boxes of sugar beets in fields more accurately. But the difference to the small model is very low. We also have to keep in mind that about $ 10000 $ images of sugar beets were labeled manually. Of course, this was done as exactly as possible, but in many cases, the borders of sugar beets were not clearly visible at first or even second glance leading to small errors in the labeling. Especially in images of larger sugar beet plants, the bounding box labeling by hand is very hard because of the overlapping leafs. Especially with this background, the small difference of accuracy between large and small model is not too important.\\
 
-All in all, this leads to the decision of implementing the small model directly in the application. It has two advantages. The first is that the user can directly see if a plant is detected and immediately adjust the camera position and angle. Another possibility is the implementation of adjusting the bounding box so that a different part of the image is cropped if the user thinks that the prediction is not correct enough. This leads to more flexibility of the application. \\
+All in all, this leads to the decision of implementing the small model directly in the application. It has two advantages. The first is that the user can directly see if a plant is detected and immediately adjust the camera position and angle. Another possibility is the implementation of adjusting the bounding box so that a different part of the image is cropped if the user thinks that the prediction is not correct enough. This leads to more flexibility of the application.
 
 The following images show results of detected sugar beets. They can be seen in figure \ref{fig:final_results} and some properties of the model can be followed. The first two examples (figure \ref{fig:result_1} and \ref{fig:result_2}) show easier cases. Image \ref{fig:result_1} is already very similar to the standardized format. The camera angle is $ 90° $ and the plant is centered. The second one \ref{fig:result_2} depicts small plants where the boundaries do not overlap and the soil has a completely different color than the plants which makes the detection easier. Example \ref{fig:result_3} shows an edge case. It shows two half plants at the top and right border of the image. They have high damage and are not centered on the image. However, one sugar beet plant is detected at the top of the picture because the structure of the plant was learned. In this case, the live application in the app helps the user to find the right position of the camera. He would have to move it to the top to capture the whole plant. In figures \ref{fig:result_4} and \ref{fig:result_5}, many larger plants are depicted. In the first one (\ref{fig:result_4}), 5 plants are detected with low confidence because it is very hard to find the borders because of the overlaps. However also in this case, the user of the app can use this information to hold the camera closer to the field. In the last image \ref{fig:result_5}, two plants are detected with higher confidence. Especially the upper one can be detected very well because the boundaries can be seen much better than all other sugar beets in this picture. Additionally, the source of the leafs can be seen here which makes it easier to center the bounding box on the plant. This is a tendency that can be observed for the whole model. If this is the case, the bounding box is much better than in cases of leafs not being structured.
 
