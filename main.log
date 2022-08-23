@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.14)  22 AUG 2022 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.14)  23 AUG 2022 08:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1833,7 +1833,7 @@ Overfull \hbox (2.41994pt too wide) in paragraph at lines 219--249
  []
 
 
-LaTeX Warning: Float too large for page by 33.07788pt on input line 251.
+LaTeX Warning: Float too large for page by 20.47784pt on input line 251.
 
 ) (./chapters/05.tex [28] [29 <./figures/result_1.jpg> <./figures/result_2.JPG>
  <./figures/result_3.jpg> <./figures/result_4.png (PNG copy)> <./figures/result
@@ -1883,8 +1883,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  44011 strings out of 483089
- 998111 string characters out of 5962868
- 1912821 words of memory out of 5000000
+ 998115 string characters out of 5962868
+ 1912739 words of memory out of 5000000
  57811 multiletter control sequences out of 15000+600000
  592289 words of font info for 349 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
@@ -1897,7 +1897,7 @@ fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on main.pdf (36 pages, 40974009 bytes).
+Output written on main.pdf (36 pages, 40973980 bytes).
 PDF statistics:
  619 PDF objects out of 1000 (max. 8388607)
  450 compressed objects within 5 object streams
