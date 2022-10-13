@@ -1,46 +1,24 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {american}{}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abstract}{ii}{chapter*.1}%
-\defcounter {refsection}{0}\relax 
+\babel@toc {american}{}\relax 
+\contentsline {chapter}{\nonumberline Abstract}{iii}{chapter*.1}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Theoretical Background}{4}{chapter.2}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}General Architecture of YOLO}{4}{section.2.1}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Incremental Improvements}{6}{section.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline YOLOv2}{7}{section*.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline YOLOv3}{7}{section*.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline YOLOv4}{9}{section*.8}%
-\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline YOLOv2}{7}{paragraph*.6}%
+\contentsline {paragraph}{\nonumberline YOLOv3}{7}{paragraph*.8}%
+\contentsline {paragraph}{\nonumberline YOLOv4}{9}{paragraph*.11}%
 \contentsline {section}{\numberline {2.3}Current Architecture YOLOv5}{9}{section.2.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Different Network Sizes}{10}{section*.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Additional Features}{10}{section*.12}%
-\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Different Network Sizes}{10}{paragraph*.14}%
+\contentsline {paragraph}{\nonumberline Additional Features}{10}{paragraph*.17}%
 \contentsline {chapter}{\numberline {3}Methodology}{11}{chapter.3}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Dataset}{11}{section.3.1}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Training}{15}{section.3.2}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Inference and Evaluation}{17}{section.3.3}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Mobile Detection}{18}{section.3.4}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Large Network}{19}{section.4.1}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Small and Medium Network}{24}{section.4.2}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Comparison and Discussion}{27}{section.4.3}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusion and Outlook}{30}{chapter.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{31}{chapter*.28}%
+\contentsline {chapter}{\nonumberline Bibliography}{31}{chapter*.33}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
